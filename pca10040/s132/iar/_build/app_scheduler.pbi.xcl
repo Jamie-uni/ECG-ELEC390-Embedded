@@ -228,6 +228,8 @@ C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar
 -I
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\..\config
 -I
+C:\nRF5_SDK_14.2.0_17b948a\components\drivers_nrf\nrf_soc_nosd
+-I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\inc\c
@@ -457,6 +459,8 @@ C:\nRF5_SDK_14.2.0_17b948a\external\fprintf
 C:\nRF5_SDK_14.2.0_17b948a\external\segger_rtt
 -I
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\config
+-I
+C:\nRF5_SDK_14.2.0_17b948a\components\drivers_nrf\nrf_soc_nosd
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

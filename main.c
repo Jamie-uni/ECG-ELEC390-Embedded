@@ -46,12 +46,16 @@
  * @ref srvlib_conn_params module.
  */
 
+#include <stdbool.h>
 #include <stdint.h>
+#include <stdio.h>
 #include <string.h>
 #include "nordic_common.h"
 #include "nrf.h"
+#include "nrf_drv_saadc.h"
 #include "nrf_sdm.h"
 #include "app_error.h"
+
 #include "ble.h"
 #include "ble_err.h"
 #include "ble_hci.h"
@@ -76,6 +80,16 @@
 #include "nrf_log.h"
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
+
+#include "nrf_drv_ppi.h"
+#include "nrf_drv_timer.h"
+#include "boards.h"
+#include "app_error.h"
+#include "nrf_delay.h"
+#include "app_util_platform.h"
+#include "nrf_pwr_mgmt.h"
+#include "nrf_drv_power.h"
+
 
 
 #define DEVICE_NAME                         "ECG_Sensor"                            /**< Name of device. Will be included in the advertising data. */
@@ -144,6 +158,9 @@ static sensorsim_cfg_t   m_heart_rate_sim_cfg;                      /**< Heart R
 static sensorsim_state_t m_heart_rate_sim_state;                    /**< Heart Rate sensor simulator state. */
 static sensorsim_cfg_t   m_rr_interval_sim_cfg;                     /**< RR Interval sensor simulator configuration. */
 static sensorsim_state_t m_rr_interval_sim_state;                   /**< RR Interval sensor simulator state. */
+
+/* ADC */
+
 
 static ble_uuid_t m_adv_uuids[] =                                   /**< Universally unique service identifiers. */
 {
@@ -362,13 +379,15 @@ static void battery_level_meas_timeout_handler(void * p_context)
  * @param[in] p_context  Pointer used for passing some arbitrary information (context) from the
  *                       app_start_timer() call to the timeout handler.
  */
+
 static void heart_rate_meas_timeout_handler(void * p_context)
 {
+   UNUSED_PARAMETER(p_context);
+
     static uint32_t cnt = 0;
     ret_code_t      err_code;
     uint16_t        heart_rate;
 
-    UNUSED_PARAMETER(p_context);
   // Add blocking SAADC pull
     heart_rate = (uint16_t)sensorsim_measure(&m_heart_rate_sim_state, &m_heart_rate_sim_cfg);
     NRF_LOG_INFO("Heart Rate: %d", heart_rate);
@@ -389,6 +408,7 @@ static void heart_rate_meas_timeout_handler(void * p_context)
     // of messages without RR Interval measurements.
     m_rr_interval_enabled = 0;
 }
+
 
 
 /**@brief Function for handling the RR interval timer timeout.
@@ -465,8 +485,8 @@ static void timers_init(void)
     APP_ERROR_CHECK(err_code);
 
     err_code = app_timer_create(&m_heart_rate_timer_id,
-                                APP_TIMER_MODE_REPEATED,
-                                heart_rate_meas_timeout_handler);
+                            APP_TIMER_MODE_REPEATED,
+                            heart_rate_meas_timeout_handler);
     APP_ERROR_CHECK(err_code);
 
     err_code = app_timer_create(&m_rr_interval_timer_id,
@@ -1050,7 +1070,10 @@ int main(void)
     application_timers_start();
 
     advertising_start(erase_bonds);
-
+    NRF_LOG_INFO("SAADAAAAAC HAL simple example.");
+    saadc_init();
+    //saadc_sampling_event_init();
+    //saadc_sampling_event_enable();
     // Enter main loop.
     for (;;)
     {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
     <DebugChecksum>
-        <Checksum>3007693666</Checksum>
+        <Checksum>1755596229</Checksum>
     </DebugChecksum>
     <CodeCoverage>
         <Enabled>_ 0</Enabled>
@@ -46,6 +46,9 @@
         <ITMportsLogFile>0</ITMportsLogFile>
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
+    <Disassembly>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
     <Trace1>
         <Enabled>0</Enabled>
         <ShowSource>1</ShowSource>

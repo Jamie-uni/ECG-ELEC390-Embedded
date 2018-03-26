@@ -31,6 +31,10 @@ C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_drv_clock.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_drv_common.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_drv_gpiote.pbi
+C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_drv_power.pbi
+C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_drv_ppi.pbi
+C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_drv_saadc.pbi
+C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_drv_timer.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_drv_uart.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_fprintf.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_fprintf_format.pbi
@@ -44,6 +48,7 @@ C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_log_str_formatter.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_memobj.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_pwr_mgmt.pbi
+C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_saadc.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_sdh.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_sdh_ble.pbi
 C:\nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\ble_app_hrs\pca10040\s132\iar\_build\nrf_sdh_soc.pbi

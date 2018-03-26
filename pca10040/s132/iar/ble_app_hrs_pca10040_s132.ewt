@@ -1271,7 +1271,22 @@
             <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\gpiote\nrf_drv_gpiote.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\power\nrf_drv_power.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\ppi\nrf_drv_ppi.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\saadc\nrf_drv_saadc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\timer\nrf_drv_timer.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\uart\nrf_drv_uart.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_saadc.c</name>
         </file>
     </group>
     <group>
