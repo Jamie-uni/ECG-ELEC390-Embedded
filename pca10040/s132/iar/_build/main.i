@@ -49669,86 +49669,64 @@ static sensorsim_state_t m_rr_interval_sim_state;
 
  
 
-
-volatile uint8_t state = 1;
-
-static const nrf_drv_timer_t m_timer = { . p_reg = ((NRF_TIMER_Type *) 0x40008000UL), . instance_id = 0, . cc_channel_count = 4, };
-static nrf_saadc_value_t     m_buffer_pool[2][5];
-static nrf_ppi_channel_t     m_ppi_channel;
-static uint32_t              m_adc_evt_counter;
+#line 173 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 
 
-void timer_handler(nrf_timer_event_t event_type, void * p_context)
-{
-
-}
-
-void heart_rate_meas_ADC(uint16_t);
-void saadc_sampling_event_init(void)
-{
-    ret_code_t err_code;
-
-    err_code = nrf_drv_ppi_init();
-
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
-
-    nrf_drv_timer_config_t timer_cfg = { . frequency = (nrf_timer_frequency_t)0, . mode = (nrf_timer_mode_t)0, . bit_width = (nrf_timer_bit_width_t)0, . interrupt_priority = 7, . p_context = 0 };
-    timer_cfg.bit_width = NRF_TIMER_BIT_WIDTH_32;
-    err_code = nrf_drv_timer_init(&m_timer, &timer_cfg, timer_handler);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
-
-     
-    uint32_t ticks = nrf_drv_timer_ms_to_ticks(&m_timer, 400);
-    nrf_drv_timer_extended_compare(&m_timer,
-                                   NRF_TIMER_CC_CHANNEL0,
-                                   ticks,
-                                   NRF_TIMER_SHORT_COMPARE0_CLEAR_MASK,
-                                   0);
-    nrf_drv_timer_enable(&m_timer);
-
-    uint32_t timer_compare_event_addr = nrf_drv_timer_compare_event_address_get(&m_timer,
-                                                                                NRF_TIMER_CC_CHANNEL0);
-    uint32_t saadc_sample_task_addr   = nrf_drv_saadc_sample_task_get();
-
-     
-    err_code = nrf_drv_ppi_channel_alloc(&m_ppi_channel);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
-
-    err_code = nrf_drv_ppi_channel_assign(m_ppi_channel,
-                                          timer_compare_event_addr,
-                                          saadc_sample_task_addr);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
-}
+void saadc_init(void);
 
 
-void saadc_sampling_event_enable(void)
-{
-    ret_code_t err_code = nrf_drv_ppi_channel_enable(m_ppi_channel);
+static nrf_saadc_value_t       m_buffer_pool[2][4];
+static uint32_t                m_adc_evt_counter = 0;
 
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
-}
+
 
 
 
 void saadc_callback(nrf_drv_saadc_evt_t const * p_event)
 {
-    if (p_event->type == NRF_DRV_SAADC_EVT_DONE)
+    ret_code_t err_code;
+        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "SAADC callback! \r\n"); } };                                              
+
+    if (p_event->type == NRF_DRV_SAADC_EVT_DONE)                                                        
     {
-        ret_code_t err_code;
+			
+        do { uint32_t gpio_state = ((NRF_GPIO_Type *) 0x50000000UL)->OUT; if (0) { if (sizeof((1<<18)) == 4) { } else { assert_nrf_callback((uint16_t)193, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"); } }; ((NRF_GPIO_Type *) 0x50000000UL)->OUTSET = (((1<<18)) & ~gpio_state); ((NRF_GPIO_Type *) 0x50000000UL)->OUTCLR = (((1<<18)) & gpio_state); } while (0);                                                                    
 
-        err_code = nrf_drv_saadc_buffer_convert(p_event->data.done.p_buffer, 5);
-        do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
-
-        int i;
+       
         
-        uint16_t avg = 0;
-        for (i = 0; i < 5; i++)
+        
+          
+        
+        
+
+        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "ADC event number: %d\r\n", (uint32_t)((int)m_adc_evt_counter)); } };                                
+
+        for (int i = 0; i < p_event->data.done.size; i++)
         {
-            avg += p_event->data.done.p_buffer[i];
+            if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "%d\r\n", (uint32_t)(p_event->data . done . p_buffer[i])); } };                                     
         }
-        avg /= 5;
-        heart_rate_meas_ADC((uint16_t) avg);
+        ble_hrs_heart_rate_measurement_send(&m_hrs, (uint16_t) (p_event->data.done.p_buffer[0]+0xFF));
+    
+      
+        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "sent packet %u", (uint32_t)((uint16_t) (p_event->data . done . p_buffer[0]+0xFF))); } };
+            err_code = nrf_drv_saadc_buffer_convert(p_event->data.done.p_buffer, 4);             
+            do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
+        
+
         m_adc_evt_counter++;
+  
+    }
+    else if (p_event->type == NRF_DRV_SAADC_EVT_CALIBRATEDONE)
+    {
+        do { uint32_t gpio_state = ((NRF_GPIO_Type *) 0x50000000UL)->OUT; if (0) { if (sizeof((1<<19)) == 4) { } else { assert_nrf_callback((uint16_t)221, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"); } }; ((NRF_GPIO_Type *) 0x50000000UL)->OUTSET = (((1<<19)) & ~gpio_state); ((NRF_GPIO_Type *) 0x50000000UL)->OUTCLR = (((1<<19)) & gpio_state); } while (0);                                                                    
+        
+        err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[0], 4);             
+        do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
+        err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[1], 4);             
+        do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
+        
+        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "SAADC calibration complete ! \r\n"); } };                                              
+        
     }
 }
 
@@ -49756,22 +49734,51 @@ void saadc_callback(nrf_drv_saadc_evt_t const * p_event)
 void saadc_init(void)
 {
     ret_code_t err_code;
-    nrf_saadc_channel_config_t channel_config =
-        { . resistor_p = NRF_SAADC_RESISTOR_DISABLED, . resistor_n = NRF_SAADC_RESISTOR_DISABLED, . gain = NRF_SAADC_GAIN1_6, . reference = NRF_SAADC_REFERENCE_INTERNAL, . acq_time = NRF_SAADC_ACQTIME_10US, . mode = NRF_SAADC_MODE_SINGLE_ENDED, . burst = NRF_SAADC_BURST_DISABLED, . pin_p = (nrf_saadc_input_t)(NRF_SAADC_INPUT_AIN0), . pin_n = NRF_SAADC_INPUT_DISABLED };
+    nrf_drv_saadc_config_t saadc_config;
+    nrf_saadc_channel_config_t channel_config;
+    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "SAADC init! \r\n"); } };                                              
 
-    err_code = nrf_drv_saadc_init(0, saadc_callback);
+
+	
+    
+    saadc_config.low_power_mode = 1;                                                   
+    saadc_config.resolution = NRF_SAADC_RESOLUTION_12BIT;                                 
+    saadc_config.oversample = NRF_SAADC_OVERSAMPLE_4X;                                           
+    saadc_config.interrupt_priority = APP_IRQ_PRIORITY_LOW;                               
+	
+    
+    err_code = nrf_drv_saadc_init(&saadc_config, saadc_callback);                         
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
+		
+    
+    channel_config.reference = NRF_SAADC_REFERENCE_INTERNAL;                              
+    channel_config.gain = NRF_SAADC_GAIN1_6;                                              
+    channel_config.acq_time = NRF_SAADC_ACQTIME_10US;                                     
+    channel_config.mode = NRF_SAADC_MODE_SINGLE_ENDED;                                    
+    channel_config.pin_p = NRF_SAADC_INPUT_AIN0;                                          
+    channel_config.pin_n = NRF_SAADC_INPUT_DISABLED;                                      
+    channel_config.resistor_p = NRF_SAADC_RESISTOR_DISABLED;                              
+    channel_config.resistor_n = NRF_SAADC_RESISTOR_DISABLED;                              
+
+	
+    
+    err_code = nrf_drv_saadc_channel_init(0, &channel_config);                            
+    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
+		
+    if(1)
+    {
+        ((NRF_SAADC_Type *) 0x40007000UL)->CH[0].CONFIG |= 0x01000000;                                            
+    }
+
+    err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[0],4);    
     do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
 
-    err_code = nrf_drv_saadc_channel_init(0, &channel_config);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
-
-    err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[0], 5);
-    do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
-
-    err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[1], 5);
+    
+    err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[1],4);    
     do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
 
 }
+
 
 static ble_uuid_t m_adv_uuids[] =                                    
 {
@@ -49995,56 +50002,33 @@ static void heart_rate_meas_timeout_handler(void * p_context)
 {
    ((void)(p_context));
 
-    static uint32_t cnt = 0;
-    ret_code_t      err_code;
-    uint16_t        heart_rate;
 
-  
-    heart_rate = (uint16_t)sensorsim_measure(&m_heart_rate_sim_state, &m_heart_rate_sim_cfg);
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Heart Rate: %d", (uint32_t)(heart_rate)); } };
 
-    cnt++;
-    err_code = ble_hrs_heart_rate_measurement_send(&m_hrs, heart_rate);
-    if ((err_code != ((0x0) + 0)) &&
-        (err_code != ((0x0) + 8)) &&
-        (err_code != ((0x0) + 19)) &&
-        (err_code != (((0x3000)+0x400) + 0x001))
-       )
-    {
-        do { app_error_handler_bare((err_code)); } while (0);
-    }
 
-    
-    
-    
-    m_rr_interval_enabled = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    nrf_drv_saadc_sample(); 
+
 }
 
-static void heart_rate_meas_ADC(uint16_t heart_rate)
-{
-    static uint32_t cnt = 0;
-    ret_code_t      err_code;
-
-    
-    
-        
-    cnt++;
-    
-    err_code = ((0x0) + 0);
-    if ((err_code != ((0x0) + 0)) &&
-        (err_code != ((0x0) + 8)) &&
-        (err_code != ((0x0) + 19)) &&
-        (err_code != (((0x3000)+0x400) + 0x001))
-       )
-    {
-        do { app_error_handler_bare((err_code)); } while (0);
-    }
-
-    
-    
-    
-    m_rr_interval_enabled = 0;
-}
 
 
 

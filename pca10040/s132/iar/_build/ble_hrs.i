@@ -38130,7 +38130,7 @@ uint32_t ble_hrs_heart_rate_measurement_send(ble_hrs_t * p_hrs, uint16_t heart_r
         hvx_params.p_data = encoded_hrm;
 
         err_code = sd_ble_gatts_hvx(p_hrs->conn_handle, &hvx_params);
-        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Packet_send"); } };
+        
         if ((err_code == ((0x0) + 0)) && (hvx_len != len))
         {
             err_code = ((0x0) + 12);
@@ -38143,7 +38143,7 @@ uint32_t ble_hrs_heart_rate_measurement_send(ble_hrs_t * p_hrs, uint16_t heart_r
         {
           if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "NRF_ERROR_RESOURCES"); } };
         }
-
+                          
 
 
         
