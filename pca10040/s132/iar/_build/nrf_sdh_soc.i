@@ -29429,100 +29429,7 @@ void nrf_sdh_evts_poll(void);
 
 
 
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -29643,9 +29550,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -30053,8 +29957,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -30065,7 +29967,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\softdevice\\common\\nrf_sdh_soc.c"
-__root const nrf_log_module_const_data_t m_nrf_log_nrf_sdh_soc_logs_data_const @ "log_const_data" = { . p_module_name = "nrf_sdh_soc", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 3, }; __root nrf_log_module_dynamic_data_t m_nrf_log_nrf_sdh_soc_logs_data_dynamic @ "log_dynamic_data";
+;
 
 
 
@@ -30092,7 +29994,7 @@ static void nrf_sdh_soc_evts_poll(void * p_context)
             break;
         }
 
-        if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_nrf_sdh_soc_logs_data_dynamic . module_id << 16), "SoC event: 0x%x.", (uint32_t)(evt_id)); } };
+        if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("SoC event: 0x%x."); (void)(evt_id); } };
 
         
         nrf_section_iter_t  iter;

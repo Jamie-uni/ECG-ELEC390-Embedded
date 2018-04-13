@@ -34038,100 +34038,7 @@ uint16_t nrf_ble_gatt_eff_mtu_get(nrf_ble_gatt_t const * p_gatt, uint16_t conn_h
 
 
 
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -34252,9 +34159,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -34662,8 +34566,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -34775,25 +34677,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #line 76 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_ctrl_internal.h"
 
@@ -38137,11 +38020,11 @@ uint32_t ble_hrs_heart_rate_measurement_send(ble_hrs_t * p_hrs, uint16_t heart_r
         }
         if (err_code == ((0x0) + 0))
         {
-          if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "NRF_SUCCESS"); } };
+          if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("NRF_SUCCESS"); } };
         }
         if (err_code == ((0x0) + 19))
         {
-          if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "NRF_ERROR_RESOURCES"); } };
+          if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("NRF_ERROR_RESOURCES"); } };
         }
                           
 

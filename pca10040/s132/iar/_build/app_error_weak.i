@@ -27672,100 +27672,7 @@ static inline _Bool is_address_from_stack(void * ptr)
 
 
 #line 54 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -27886,9 +27793,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -28296,8 +28200,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -28409,25 +28311,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #line 76 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_ctrl_internal.h"
 
@@ -31309,7 +31192,96 @@ nrf_log_severity_t nrf_log_module_filter_get(uint32_t backend_id,
 
  
 #line 44 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\util\\app_error_weak.c"
+#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+char const * nrf_strerror_get(ret_code_t code);
+
+
+
+
+
+
+
+
+
+
+ 
+char const * nrf_strerror_find(ret_code_t code);
+
+ 
+
+
+
+
+
+#line 45 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\util\\app_error_weak.c"
 
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\softdevice\\s132\\headers\\nrf_sdm.h"
 
@@ -31730,17 +31702,17 @@ _Pragma("swi_number = (SD_SOFTDEVICE_VECTOR_TABLE_BASE_SET)") __swi uint32_t sd_
  
 _Pragma("object_attribute = __weak") void app_error_fault_handler(uint32_t id, uint32_t pc, uint32_t info)
 {
-    do { nrf_log_panic(); do { while (nrf_log_frontend_dequeue()); } while (0); } while (0);
+    ;
 
 
-    if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_0(((1UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Fatal error"); } };
+    if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("Fatal error"); } };
 #line 96 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\util\\app_error_weak.c"
 
     do { if (((CoreDebug_Type *) (0xE000EDF0UL))->DHCSR & (1UL )) { asm volatile ("BKPT\t%0" : : "i"(0)); } }while (0);
     
 
 
-    if (1 && (3 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_0(((2UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "System reset"); } };
+    if (0 && (3 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("System reset"); } };
     NVIC_SystemReset();
 
 

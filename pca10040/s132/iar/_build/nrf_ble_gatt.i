@@ -32837,100 +32837,7 @@ uint16_t nrf_ble_gatt_eff_mtu_get(nrf_ble_gatt_t const * p_gatt, uint16_t conn_h
 
 
 #line 54 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -33051,9 +32958,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -33461,8 +33365,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -33473,7 +33375,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 48 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\ble\\nrf_ble_gatt\\nrf_ble_gatt.c"
-__root const nrf_log_module_const_data_t m_nrf_log_ble_gatt_logs_data_const @ "log_const_data" = { . p_module_name = "ble_gatt", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 3, }; __root nrf_log_module_dynamic_data_t m_nrf_log_ble_gatt_logs_data_dynamic @ "log_dynamic_data";
+;
 
 
 
@@ -33505,7 +33407,7 @@ static void link_init(nrf_ble_gatt_link_t * p_link)
 
 static void data_length_update(uint16_t conn_handle, nrf_ble_gatt_t const * p_gatt)
 {
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "Requesting to update data length to %u on connection 0x%x.", (uint32_t)(p_gatt->links[conn_handle]. data_length_desired), (uint32_t)(conn_handle)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Requesting to update data length to %u on connection 0x%x."); (void)(p_gatt->links[conn_handle]. data_length_desired); (void)(conn_handle); } };
 
 
     ble_gap_data_length_params_t const dlp =
@@ -33519,7 +33421,7 @@ static void data_length_update(uint16_t conn_handle, nrf_ble_gatt_t const * p_ga
     ret_code_t err_code = sd_ble_gap_data_length_update(conn_handle, &dlp, 0);
     if (err_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_2(((1UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "sd_ble_gap_data_length_update() (request)" " on connection 0x%x returned unexpected value 0x%x.", (uint32_t)(conn_handle), (uint32_t)(err_code)); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_gap_data_length_update() (request)" " on connection 0x%x returned unexpected value 0x%x."); (void)(conn_handle); (void)(err_code); } };
 
 
     }
@@ -33560,7 +33462,7 @@ static void on_connected_evt(nrf_ble_gatt_t * p_gatt, ble_evt_t const * p_ble_ev
     
     if (p_link->att_mtu_desired > p_link->att_mtu_effective)
     {
-        if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "Requesting to update ATT MTU to %u bytes on connection 0x%x.", (uint32_t)(p_link->att_mtu_desired), (uint32_t)(conn_handle)); } };
+        if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Requesting to update ATT MTU to %u bytes on connection 0x%x."); (void)(p_link->att_mtu_desired); (void)(conn_handle); } };
 
 
         err_code = sd_ble_gattc_exchange_mtu_request(conn_handle, p_link->att_mtu_desired);
@@ -33572,12 +33474,12 @@ static void on_connected_evt(nrf_ble_gatt_t * p_gatt, ble_evt_t const * p_ble_ev
         else if (err_code == ((0x0) + 17))
         {
             p_link->att_mtu_exchange_pending = 1;
-            if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "sd_ble_gattc_exchange_mtu_request()" " on connection 0x%x returned busy, will retry.", (uint32_t)(conn_handle)); } };
+            if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("sd_ble_gattc_exchange_mtu_request()" " on connection 0x%x returned busy, will retry."); (void)(conn_handle); } };
 
         }
         else
         {
-            if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "sd_ble_gattc_exchange_mtu_request()" " returned unexpected value 0x%x.", (uint32_t)(err_code)); } };
+            if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_gattc_exchange_mtu_request()" " returned unexpected value 0x%x."); (void)(err_code); } };
 
 
         }
@@ -33621,7 +33523,7 @@ static void on_exchange_mtu_rsp_evt(nrf_ble_gatt_t * p_gatt, ble_evt_t const * p
     p_link->att_mtu_effective = ((server_rx_mtu) < (p_link->att_mtu_desired) ? (server_rx_mtu) : (p_link->att_mtu_desired));
     p_link->att_mtu_effective = ((p_link->att_mtu_effective) < (23) ? (23) : (p_link->att_mtu_effective));
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "ATT MTU updated to %u bytes on connection 0x%x (response).", (uint32_t)(p_link->att_mtu_effective), (uint32_t)(conn_handle)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("ATT MTU updated to %u bytes on connection 0x%x (response)."); (void)(p_link->att_mtu_effective); (void)(conn_handle); } };
 
 
     
@@ -33656,21 +33558,21 @@ static void on_exchange_mtu_request_evt(nrf_ble_gatt_t * p_gatt, ble_evt_t const
 
     nrf_ble_gatt_link_t * p_link = &p_gatt->links[conn_handle];
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "Peer on connection 0x%x requested an ATT MTU of %u bytes.", (uint32_t)(conn_handle), (uint32_t)(client_mtu)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Peer on connection 0x%x requested an ATT MTU of %u bytes."); (void)(conn_handle); (void)(client_mtu); } };
 
 
     client_mtu = ((client_mtu) < (23) ? (23) : (client_mtu));
     p_link->att_mtu_effective = ((client_mtu) < (p_link->att_mtu_desired) ? (client_mtu) : (p_link->att_mtu_desired));
     p_link->att_mtu_exchange_pending = 0;
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_3(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "Updating ATT MTU to %u bytes (desired: %u) on connection 0x%x.", (uint32_t)(p_link->att_mtu_effective), (uint32_t)(p_link->att_mtu_desired), (uint32_t)(conn_handle)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Updating ATT MTU to %u bytes (desired: %u) on connection 0x%x."); (void)(p_link->att_mtu_effective); (void)(p_link->att_mtu_desired); (void)(conn_handle); } };
 
 
     err_code = sd_ble_gatts_exchange_mtu_reply(conn_handle, p_link->att_mtu_desired);
 
     if (err_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "sd_ble_gatts_exchange_mtu_reply() returned unexpected value 0x%x.", (uint32_t)(err_code)); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_gatts_exchange_mtu_reply() returned unexpected value 0x%x."); (void)(err_code); } };
 
     }
 
@@ -33714,17 +33616,17 @@ static void on_data_length_update_evt(nrf_ble_gatt_t * p_gatt, ble_evt_t const *
     p_gatt->links[conn_handle].data_length_effective =
         gap_evt.params.data_length_update.effective_params.max_tx_octets;
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "Data length updated to %u on connection 0x%0x.", (uint32_t)(p_gatt->links[conn_handle]. data_length_effective), (uint32_t)(conn_handle)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Data length updated to %u on connection 0x%0x."); (void)(p_gatt->links[conn_handle]. data_length_effective); (void)(conn_handle); } };
 
 
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "max_rx_octets: %u", (uint32_t)(gap_evt . params . data_length_update . effective_params . max_rx_octets)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("max_rx_octets: %u"); (void)(gap_evt . params . data_length_update . effective_params . max_rx_octets); } };
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "max_tx_octets: %u", (uint32_t)(gap_evt . params . data_length_update . effective_params . max_tx_octets)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("max_tx_octets: %u"); (void)(gap_evt . params . data_length_update . effective_params . max_tx_octets); } };
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "max_rx_time: %u", (uint32_t)(gap_evt . params . data_length_update . effective_params . max_rx_time_us)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("max_rx_time: %u"); (void)(gap_evt . params . data_length_update . effective_params . max_rx_time_us); } };
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "max_tx_time: %u", (uint32_t)(gap_evt . params . data_length_update . effective_params . max_tx_time_us)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("max_tx_time: %u"); (void)(gap_evt . params . data_length_update . effective_params . max_tx_time_us); } };
 
 
     if (p_gatt->evt_handler != 0)
@@ -33768,7 +33670,7 @@ static void on_data_length_update_request_evt(nrf_ble_gatt_t * p_gatt, ble_evt_t
     uint8_t const data_length_peer =
         p_gap_evt->params.data_length_update_request.peer_params.max_tx_octets;
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "Peer on connection 0x%x requested a data length of %u bytes.", (uint32_t)(p_gap_evt->conn_handle), (uint32_t)(data_length_peer)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Peer on connection 0x%x requested a data length of %u bytes."); (void)(p_gap_evt->conn_handle); (void)(data_length_peer); } };
 
 
     uint8_t const data_length = ((p_link->data_length_desired) < (data_length_peer) ? (p_link->data_length_desired) : (data_length_peer));
@@ -33779,14 +33681,14 @@ static void on_data_length_update_request_evt(nrf_ble_gatt_t * p_gatt, ble_evt_t
         .max_tx_octets = data_length,
     };
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "Updating data length to %u bytes on connection 0x%x.", (uint32_t)(data_length), (uint32_t)(p_gap_evt->conn_handle)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Updating data length to %u bytes on connection 0x%x."); (void)(data_length); (void)(p_gap_evt->conn_handle); } };
 
 
     err_code = sd_ble_gap_data_length_update(p_gap_evt->conn_handle, &dlp, 0);
 
     if (err_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "sd_ble_gap_data_length_update() (reply)" " returned unexpected value 0x%x.", (uint32_t)(err_code)); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_gap_data_length_update() (reply)" " returned unexpected value 0x%x."); (void)(err_code); } };
 
 
     }
@@ -33966,12 +33868,12 @@ void nrf_ble_gatt_on_ble_evt(ble_evt_t const * p_ble_evt, void * p_context)
             p_gatt->links[conn_handle].att_mtu_exchange_pending   = 0;
             p_gatt->links[conn_handle].att_mtu_exchange_requested = 1;
 
-            if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "Requesting to update ATT MTU to %u bytes on connection 0x%x (retry).", (uint32_t)(p_gatt->links[conn_handle]. att_mtu_desired), (uint32_t)(conn_handle)); } };
+            if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Requesting to update ATT MTU to %u bytes on connection 0x%x (retry)."); (void)(p_gatt->links[conn_handle]. att_mtu_desired); (void)(conn_handle); } };
 
         }
         else if (err_code != ((0x0) + 17))
         {
-            if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_ble_gatt_logs_data_dynamic . module_id << 16), "sd_ble_gattc_exchange_mtu_request() returned unexpected value 0x%x.", (uint32_t)(err_code)); } };
+            if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_gattc_exchange_mtu_request() returned unexpected value 0x%x."); (void)(err_code); } };
 
         }
     }

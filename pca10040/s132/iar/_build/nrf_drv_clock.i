@@ -31071,100 +31071,7 @@ typedef struct
 
 
 
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -31285,9 +31192,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -31695,8 +31599,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -31707,7 +31609,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 66 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\clock\\nrf_drv_clock.c"
-__root const nrf_log_module_const_data_t m_nrf_log_clock_logs_data_const @ "log_const_data" = { . p_module_name = "clock", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 0, }; __root nrf_log_module_dynamic_data_t m_nrf_log_clock_logs_data_dynamic @ "log_dynamic_data";
+;
 
  
 static_assert((((((7)) > 1) && (((7)) < 4)) || ((((7)) > 4) && (((7)) < 8))), "unspecified message");
@@ -31846,7 +31748,7 @@ ret_code_t nrf_drv_clock_init(void)
         m_clock_cb.module_initialized = 1;
     }
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_clock_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
     return err_code;
 }
@@ -31860,7 +31762,7 @@ void nrf_drv_clock_uninit(void)
     lfclk_stop();
     hfclk_stop();
     m_clock_cb.module_initialized = 0;
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_clock_logs_data_dynamic . module_id << 16), "Uninitialized."); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Uninitialized."); } };
 }
 
 static void item_enqueue(nrf_drv_clock_handler_item_t ** p_head,
@@ -32021,7 +31923,7 @@ ret_code_t nrf_drv_clock_calibration_start(uint8_t interval, nrf_drv_clock_event
     ret_code_t err_code = ((0x0) + 0);
 #line 429 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\clock\\nrf_drv_clock.c"
     err_code = ((0x0) + 15);
-    if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_clock_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 
 }
@@ -32031,7 +31933,7 @@ ret_code_t nrf_drv_clock_calibration_abort(void)
     ret_code_t err_code = ((0x0) + 0);
 #line 464 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\clock\\nrf_drv_clock.c"
     err_code = ((0x0) + 15);
-    if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_clock_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 
 }
@@ -32041,7 +31943,7 @@ ret_code_t nrf_drv_clock_is_calibrating(_Bool * p_is_calibrating)
     ret_code_t err_code = ((0x0) + 0);
 #line 479 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\clock\\nrf_drv_clock.c"
     err_code = ((0x0) + 15);
-    if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_clock_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 
 }
@@ -32079,7 +31981,7 @@ void POWER_CLOCK_IRQHandler(void)
     if (nrf_clock_event_check(NRF_CLOCK_EVENT_HFCLKSTARTED))
     {
         nrf_clock_event_clear(NRF_CLOCK_EVENT_HFCLKSTARTED);
-        if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_clock_logs_data_dynamic . module_id << 16), "Event: %s.", (uint32_t)((uint32_t)"")); } };
+        if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Event: %s."); (void)((uint32_t)""); } };
         nrf_clock_int_disable(NRF_CLOCK_INT_HF_STARTED_MASK);
         m_clock_cb.hfclk_on = 1;
         clock_clk_started_notify(NRF_DRV_CLOCK_EVT_HFCLK_STARTED);
@@ -32087,7 +31989,7 @@ void POWER_CLOCK_IRQHandler(void)
     if (nrf_clock_event_check(NRF_CLOCK_EVENT_LFCLKSTARTED))
     {
         nrf_clock_event_clear(NRF_CLOCK_EVENT_LFCLKSTARTED);
-        if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_clock_logs_data_dynamic . module_id << 16), "Event: %s.", (uint32_t)((uint32_t)"")); } };
+        if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Event: %s."); (void)((uint32_t)""); } };
         nrf_clock_int_disable(NRF_CLOCK_INT_LF_STARTED_MASK);
         m_clock_cb.lfclk_on = 1;
         clock_clk_started_notify(NRF_DRV_CLOCK_EVT_LFCLK_STARTED);

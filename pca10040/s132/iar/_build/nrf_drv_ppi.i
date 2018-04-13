@@ -31235,100 +31235,7 @@ uint8_t privilege_level_get(void);
 
 
 #line 54 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -31449,9 +31356,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -31859,8 +31763,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -31871,7 +31773,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\ppi\\nrf_drv_ppi.c"
-__root const nrf_log_module_const_data_t m_nrf_log_ppi_logs_data_const @ "log_const_data" = { . p_module_name = "ppi", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 3, }; __root nrf_log_module_dynamic_data_t m_nrf_log_ppi_logs_data_dynamic @ "log_dynamic_data";
+;
 
 
 static nrf_drv_state_t     m_drv_state;             
@@ -32024,7 +31926,7 @@ uint32_t nrf_drv_ppi_init(void)
         err_code = (((0x0) + 0x0080) + 0x0005);
     }
 
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32038,7 +31940,7 @@ uint32_t nrf_drv_ppi_uninit(void)
     if (m_drv_state == NRF_DRV_STATE_UNINITIALIZED)
     {
         err_code = ((0x0) + 8);
-        if (1 && (3 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (3 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
         return err_code;
     }
 
@@ -32056,7 +31958,7 @@ uint32_t nrf_drv_ppi_uninit(void)
     }
     channel_allocated_clr_all();
     group_allocated_clr_all();
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32082,12 +31984,12 @@ uint32_t nrf_drv_ppi_channel_alloc(nrf_ppi_channel_t * p_channel)
         app_util_critical_region_exit(__CR_NESTED); };
         if (err_code == ((0x0) + 0))
         {
-            if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Allocated channel: %d.", (uint32_t)(channel)); } };
+            if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Allocated channel: %d."); (void)(channel); } };
             break;
         }
     }
 
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32108,7 +32010,7 @@ uint32_t nrf_drv_ppi_channel_free(nrf_ppi_channel_t channel)
         channel_allocated_clr(channel);
         app_util_critical_region_exit(__CR_NESTED); };
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32131,9 +32033,9 @@ uint32_t nrf_drv_ppi_channel_assign(nrf_ppi_channel_t channel, uint32_t eep, uin
     else
     {
         nrf_ppi_channel_endpoint_setup(channel, eep, tep);
-        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_3(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Assigned channel: %d, event end point: %x, task end point: %x.", (uint32_t)(channel), (uint32_t)(eep), (uint32_t)(tep)); } };
+        if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Assigned channel: %d, event end point: %x, task end point: %x."); (void)(channel); (void)(eep); (void)(tep); } };
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32152,9 +32054,9 @@ uint32_t nrf_drv_ppi_channel_fork_assign(nrf_ppi_channel_t channel, uint32_t for
     else
     {
         nrf_ppi_fork_endpoint_setup(channel, fork_tep);
-        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Fork assigned channel: %d, task end point: %d.", (uint32_t)(channel), (uint32_t)(fork_tep)); } };
+        if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Fork assigned channel: %d, task end point: %d."); (void)(channel); (void)(fork_tep); } };
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 
 
@@ -32179,7 +32081,7 @@ uint32_t nrf_drv_ppi_channel_enable(nrf_ppi_channel_t channel)
     {
         nrf_ppi_channel_enable(channel);
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32201,7 +32103,7 @@ uint32_t nrf_drv_ppi_channel_disable(nrf_ppi_channel_t channel)
         nrf_ppi_channel_disable(channel);
         err_code = ((0x0) + 0);
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32227,12 +32129,12 @@ uint32_t nrf_drv_ppi_group_alloc(nrf_ppi_channel_group_t * p_group)
         app_util_critical_region_exit(__CR_NESTED); };
         if (err_code == ((0x0) + 0))
         {
-            if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Allocated group: %d.", (uint32_t)(group)); } };
+            if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Allocated group: %d."); (void)(group); } };
             break;
         }
     }
 
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32256,7 +32158,7 @@ uint32_t nrf_drv_ppi_group_free(nrf_ppi_channel_group_t group)
         group_allocated_clr(group);
         app_util_critical_region_exit(__CR_NESTED); };
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32277,7 +32179,7 @@ uint32_t nrf_drv_ppi_group_enable(nrf_ppi_channel_group_t group)
     {
         nrf_ppi_group_enable(group);
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32294,7 +32196,7 @@ uint32_t nrf_drv_ppi_group_disable(nrf_ppi_channel_group_t group)
     {
         nrf_ppi_group_disable(group);
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32321,7 +32223,7 @@ uint32_t nrf_drv_ppi_channels_remove_from_group(uint32_t channel_mask,
         nrf_ppi_channels_remove_from_group(channel_mask, group);
         app_util_critical_region_exit(__CR_NESTED); };
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -32348,6 +32250,6 @@ uint32_t nrf_drv_ppi_channels_include_in_group(uint32_t channel_mask,
         nrf_ppi_channels_include_in_group(channel_mask, group);
         app_util_critical_region_exit(__CR_NESTED); };
     }
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_ppi_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }

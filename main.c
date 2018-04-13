@@ -1,50 +1,3 @@
-/**
- * Copyright (c) 2014 - 2017, Nordic Semiconductor ASA
- * 
- * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
- * 
- * 1. Redistributions of source code must retain the above copyright notice, this
- *    list of conditions and the following disclaimer.
- * 
- * 2. Redistributions in binary form, except as embedded into a Nordic
- *    Semiconductor ASA integrated circuit in a product or a software update for
- *    such product, must reproduce the above copyright notice, this list of
- *    conditions and the following disclaimer in the documentation and/or other
- *    materials provided with the distribution.
- * 
- * 3. Neither the name of Nordic Semiconductor ASA nor the names of its
- *    contributors may be used to endorse or promote products derived from this
- *    software without specific prior written permission.
- * 
- * 4. This software, with or without modification, must only be used with a
- *    Nordic Semiconductor ASA integrated circuit.
- * 
- * 5. Any software provided in binary form under this license must not be reverse
- *    engineered, decompiled, modified and/or disassembled.
- * 
- * THIS SOFTWARE IS PROVIDED BY NORDIC SEMICONDUCTOR ASA "AS IS" AND ANY EXPRESS
- * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY, NONINFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL NORDIC SEMICONDUCTOR ASA OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- * GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
- * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- * 
- */
-/** @example examples/ble_peripheral/ble_app_hrs/main.c
- *
- * @brief Heart Rate Service Sample Application main file.
- *
- * This file contains the source code for a sample application using the Heart Rate service
- * (and also Battery and Device Information services). This application uses the
- * @ref srvlib_conn_params module.
- */
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -105,7 +58,7 @@
 #define MAX_BATTERY_LEVEL                   100                                     /**< Maximum simulated 7battery level. */
 #define BATTERY_LEVEL_INCREMENT             1                                       /**< Increment between each simulated battery level measurement. */
 
-#define HEART_RATE_MEAS_INTERVAL            APP_TIMER_TICKS(50)                   /**< Heart rate measurement interval (ticks). */
+#define HEART_RATE_MEAS_INTERVAL            APP_TIMER_TICKS(1)                   /**< Heart rate measurement interval (ticks). */
 #define MIN_HEART_RATE                      260                                     /**< Minimum heart rate as returned by the simulated measurement function. */
 #define MAX_HEART_RATE                      65530                                     /**< Maximum heart rate as returned by the simulated measurement function. */
 #define HEART_RATE_INCREMENT                10                                      /**< Value by which the heart rate is incremented/decremented for each call to the simulated measurement function. */
@@ -200,17 +153,21 @@ void saadc_callback(nrf_drv_saadc_evt_t const * p_event)
         
 
         NRF_LOG_INFO("ADC event number: %d\r\n",(int)m_adc_evt_counter);                                //Print the event number on UART
-
+        int avg = 0;
         for (int i = 0; i < p_event->data.done.size; i++)
         {
             NRF_LOG_INFO("%d\r\n", p_event->data.done.p_buffer[i]);                                     //Print the SAADC result on UART
+            avg += p_event->data.done.p_buffer[i];
         }
-        ble_hrs_heart_rate_measurement_send(&m_hrs, (uint16_t) (p_event->data.done.p_buffer[0]+0xFF));
+        avg /= p_event->data.done.size;
+        if (avg < 0)
+          avg = 0;
+        ble_hrs_heart_rate_measurement_send(&m_hrs, (uint16_t) avg + 0x100);
     //    if(m_saadc_calibrate == false)
       //  {
-        NRF_LOG_INFO("sent packet %u",(uint16_t) (p_event->data.done.p_buffer[0]+0xFF));
+        NRF_LOG_INFO("sent packet %u",(uint16_t) avg + 0x100);
             err_code = nrf_drv_saadc_buffer_convert(p_event->data.done.p_buffer, SAADC_SAMPLES_IN_BUFFER);             //Set buffer so the SAADC can write to it again. 
-            APP_ERROR_CHECK(err_code);
+           // APP_ERROR_CHECK(err_code);
         //}
 
         m_adc_evt_counter++;
@@ -243,7 +200,7 @@ void saadc_init(void)
     //Configure SAADC
     saadc_config.low_power_mode = true;                                                   //Enable low power mode.
     saadc_config.resolution = NRF_SAADC_RESOLUTION_12BIT;                                 //Set SAADC resolution to 12-bit. This will make the SAADC output values from 0 (when input voltage is 0V) to 2^12=2048 (when input voltage is 3.6V for channel gain setting of 1/6).
-    saadc_config.oversample = SAADC_OVERSAMPLE;                                           //Set oversample to 4x. This will make the SAADC output a single averaged value when the SAMPLE task is triggered 4 times.
+    saadc_config.oversample = NRF_SAADC_OVERSAMPLE_DISABLED;                                           //Set oversample to 4x. This will make the SAADC output a single averaged value when the SAMPLE task is triggered 4 times.
     saadc_config.interrupt_priority = APP_IRQ_PRIORITY_LOW;                               //Set SAADC interrupt to low priority.
 	
     //Initialize SAADC
@@ -526,6 +483,9 @@ static void heart_rate_meas_timeout_handler(void * p_context)
     // of messages without RR Interval measurements.
     m_rr_interval_enabled = 0;*/
     nrf_drv_saadc_sample(); //Trigger the SAADC SAMPLE task
+    nrf_delay_ms(2);
+    nrf_drv_saadc_sample(); //Trigger the SAADC SAMPLE task
+
 
 }
 

@@ -33957,9 +33957,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
-
-
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
@@ -34365,8 +34362,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -34377,7 +34372,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\softdevice\\common\\nrf_sdh_ble.c"
-__root const nrf_log_module_const_data_t m_nrf_log_nrf_sdh_ble_logs_data_const @ "log_const_data" = { . p_module_name = "nrf_sdh_ble", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 3, }; __root nrf_log_module_dynamic_data_t m_nrf_log_nrf_sdh_ble_logs_data_dynamic @ "log_dynamic_data";
+;
 
 
 
@@ -34441,7 +34436,7 @@ ret_code_t nrf_sdh_ble_default_cfg_set(uint8_t conn_cfg_tag, uint32_t * p_ram_st
     ret_code = sd_ble_cfg_set(BLE_CONN_CFG_GAP, &ble_cfg, *p_ram_start);
     if (ret_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "sd_ble_cfg_set() returned %s when attempting to set BLE_CONN_CFG_GAP.", (uint32_t)(nrf_strerror_get(ret_code))); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_cfg_set() returned %s when attempting to set BLE_CONN_CFG_GAP."); (void)(nrf_strerror_get(ret_code)); } };
 
     }
 
@@ -34457,7 +34452,7 @@ ret_code_t nrf_sdh_ble_default_cfg_set(uint8_t conn_cfg_tag, uint32_t * p_ram_st
     ret_code = sd_ble_cfg_set(BLE_GAP_CFG_ROLE_COUNT, &ble_cfg, *p_ram_start);
     if (ret_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "sd_ble_cfg_set() returned %s when attempting to set BLE_GAP_CFG_ROLE_COUNT.", (uint32_t)(nrf_strerror_get(ret_code))); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_cfg_set() returned %s when attempting to set BLE_GAP_CFG_ROLE_COUNT."); (void)(nrf_strerror_get(ret_code)); } };
 
     }
 
@@ -34470,7 +34465,7 @@ ret_code_t nrf_sdh_ble_default_cfg_set(uint8_t conn_cfg_tag, uint32_t * p_ram_st
     ret_code = sd_ble_cfg_set(BLE_CONN_CFG_GATT, &ble_cfg, *p_ram_start);
     if (ret_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "sd_ble_cfg_set() returned %s when attempting to set BLE_CONN_CFG_GATT.", (uint32_t)(nrf_strerror_get(ret_code))); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_cfg_set() returned %s when attempting to set BLE_CONN_CFG_GATT."); (void)(nrf_strerror_get(ret_code)); } };
 
     }
 
@@ -34483,7 +34478,7 @@ ret_code_t nrf_sdh_ble_default_cfg_set(uint8_t conn_cfg_tag, uint32_t * p_ram_st
     ret_code = sd_ble_cfg_set(BLE_COMMON_CFG_VS_UUID, &ble_cfg, *p_ram_start);
     if (ret_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "sd_ble_cfg_set() returned %s when attempting to set BLE_COMMON_CFG_VS_UUID.", (uint32_t)(nrf_strerror_get(ret_code))); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_cfg_set() returned %s when attempting to set BLE_COMMON_CFG_VS_UUID."); (void)(nrf_strerror_get(ret_code)); } };
 
     }
 
@@ -34494,7 +34489,7 @@ ret_code_t nrf_sdh_ble_default_cfg_set(uint8_t conn_cfg_tag, uint32_t * p_ram_st
     ret_code = sd_ble_cfg_set(BLE_GATTS_CFG_ATTR_TAB_SIZE, &ble_cfg, *p_ram_start);
     if (ret_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "sd_ble_cfg_set() returned %s when attempting to set BLE_GATTS_CFG_ATTR_TAB_SIZE.", (uint32_t)(nrf_strerror_get(ret_code))); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_cfg_set() returned %s when attempting to set BLE_GATTS_CFG_ATTR_TAB_SIZE."); (void)(nrf_strerror_get(ret_code)); } };
 
     }
 
@@ -34505,7 +34500,7 @@ ret_code_t nrf_sdh_ble_default_cfg_set(uint8_t conn_cfg_tag, uint32_t * p_ram_st
     ret_code = sd_ble_cfg_set(BLE_GATTS_CFG_SERVICE_CHANGED, &ble_cfg, *p_ram_start);
     if (ret_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "sd_ble_cfg_set() returned %s when attempting to set BLE_GATTS_CFG_SERVICE_CHANGED.", (uint32_t)(nrf_strerror_get(ret_code))); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_cfg_set() returned %s when attempting to set BLE_GATTS_CFG_SERVICE_CHANGED."); (void)(nrf_strerror_get(ret_code)); } };
 
     }
 
@@ -34534,21 +34529,21 @@ ret_code_t nrf_sdh_ble_enable(uint32_t * const p_app_ram_start)
     
     uint32_t const app_ram_start_link = *p_app_ram_start;
 
-    if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "RAM starts at 0x%x", (uint32_t)(app_ram_start_link)); } };
+    if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("RAM starts at 0x%x"); (void)(app_ram_start_link); } };
 
     ret_code_t ret_code = sd_ble_enable(p_app_ram_start);
     if (*p_app_ram_start != app_ram_start_link)
     {
-        if (1 && (3 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "RAM starts at 0x%x, can be adjusted to 0x%x.", (uint32_t)(app_ram_start_link), (uint32_t)(*p_app_ram_start)); } };
+        if (0 && (3 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("RAM starts at 0x%x, can be adjusted to 0x%x."); (void)(app_ram_start_link); (void)(*p_app_ram_start); } };
 
 
-        if (1 && (3 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_1(((2UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "RAM size can be adjusted to 0x%x.", (uint32_t)(ram_end_address_get() - (*p_app_ram_start))); } };
+        if (0 && (3 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("RAM size can be adjusted to 0x%x."); (void)(ram_end_address_get() - (*p_app_ram_start)); } };
 
     }
 
     if (ret_code != ((0x0) + 0))
     {
-        if (1 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "sd_ble_enable() returned %s.", (uint32_t)(nrf_strerror_get(ret_code))); } };
+        if (0 && (3 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("sd_ble_enable() returned %s."); (void)(nrf_strerror_get(ret_code)); } };
     }
 
     return ret_code;
@@ -34580,7 +34575,7 @@ static void nrf_sdh_ble_evts_poll(void * p_context)
 
         p_ble_evt = (ble_evt_t *)evt_buffer;
 
-        if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_nrf_sdh_ble_logs_data_dynamic . module_id << 16), "BLE event: 0x%x.", (uint32_t)(p_ble_evt->header . evt_id)); } };
+        if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("BLE event: 0x%x."); (void)(p_ble_evt->header . evt_id); } };
 
         
         nrf_section_iter_t  iter;

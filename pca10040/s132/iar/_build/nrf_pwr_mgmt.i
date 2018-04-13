@@ -29659,25 +29659,6 @@ static inline uint32_t nrf_power_rampower_mask_get(uint8_t block)
 
  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #line 76 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_ctrl_internal.h"
 
 
@@ -32510,100 +32491,7 @@ nrf_log_severity_t nrf_log_module_filter_get(uint32_t backend_id,
 
 
 
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -32724,9 +32612,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -33134,8 +33019,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -33146,7 +33029,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 61 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\pwr_mgmt\\nrf_pwr_mgmt.c"
-__root const nrf_log_module_const_data_t m_nrf_log_pwr_mgmt_logs_data_const @ "log_const_data" = { . p_module_name = "pwr_mgmt", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 0, }; __root nrf_log_module_dynamic_data_t m_nrf_log_pwr_mgmt_logs_data_dynamic @ "log_dynamic_data";
+;
 
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\softdevice\\common\\nrf_sdh.h"
 
@@ -33527,7 +33410,7 @@ static nrf_section_iter_t   m_handlers_iter;
 
 ret_code_t nrf_pwr_mgmt_init(void)
 {
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_pwr_mgmt_logs_data_dynamic . module_id << 16), "Init"); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Init"); } };
 
     m_shutdown_started = 0;
     nrf_mtx_init(&m_sysoff_mtx);
@@ -33573,7 +33456,7 @@ void nrf_pwr_mgmt_run(void)
 
 void nrf_pwr_mgmt_feed(void)
 {
-    if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_0(((4UL) | m_nrf_log_pwr_mgmt_logs_data_dynamic . module_id << 16), "Feed"); } };
+    if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Feed"); } };
     
     ;
 }
@@ -33582,7 +33465,7 @@ void nrf_pwr_mgmt_feed(void)
  
 static void shutdown_process(void)
 {
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_pwr_mgmt_logs_data_dynamic . module_id << 16), "Shutdown started. Type %d", (uint32_t)(m_pwr_mgmt_evt)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Shutdown started. Type %d"); (void)(m_pwr_mgmt_evt); } };
     
     for (
  ;
@@ -33593,19 +33476,19 @@ static void shutdown_process(void)
             (nrf_pwr_mgmt_shutdown_handler_t *) nrf_section_iter_get(&m_handlers_iter);
         if ((*p_handler)(m_pwr_mgmt_evt))
         {
-            if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_pwr_mgmt_logs_data_dynamic . module_id << 16), "SysOff handler 0x%08X => ready", (uint32_t)((unsigned int)*p_handler)); } };
+            if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("SysOff handler 0x%08X => ready"); (void)((unsigned int)*p_handler); } };
         }
         else
         {
             
-            if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_pwr_mgmt_logs_data_dynamic . module_id << 16), "SysOff handler 0x%08X => blocking", (uint32_t)((unsigned int)*p_handler)); } };
+            if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("SysOff handler 0x%08X => blocking"); (void)((unsigned int)*p_handler); } };
             return;
         }
     }
 
     ;
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_pwr_mgmt_logs_data_dynamic . module_id << 16), "Shutdown complete."); } };
-    do { nrf_log_panic(); do { while (nrf_log_frontend_dequeue()); } while (0); } while (0);
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Shutdown complete."); } };
+    ;
 
     if ((m_pwr_mgmt_evt == NRF_PWR_MGMT_EVT_PREPARE_RESET)
      || (m_pwr_mgmt_evt == NRF_PWR_MGMT_EVT_PREPARE_DFU))
@@ -33652,7 +33535,7 @@ void nrf_pwr_mgmt_shutdown(nrf_pwr_mgmt_shutdown_t shutdown_type)
     }
 
     if (0) { if (m_shutdown_started) { } else { assert_nrf_callback((uint16_t)452, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\pwr_mgmt\\nrf_pwr_mgmt.c"); } };
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_pwr_mgmt_logs_data_dynamic . module_id << 16), "Shutdown request %d", (uint32_t)(shutdown_type)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Shutdown request %d"); (void)(shutdown_type); } };
 
 
 

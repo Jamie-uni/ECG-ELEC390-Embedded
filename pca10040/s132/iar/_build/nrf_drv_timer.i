@@ -31149,100 +31149,7 @@ uint8_t privilege_level_get(void);
 
 
 #line 54 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -31363,9 +31270,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -31773,8 +31677,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -31785,7 +31687,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 58 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\timer\\nrf_drv_timer.c"
-__root const nrf_log_module_const_data_t m_nrf_log_timer_logs_data_const @ "log_const_data" = { . p_module_name = "timer", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 0, }; __root nrf_log_module_dynamic_data_t m_nrf_log_timer_logs_data_dynamic @ "log_dynamic_data";
+;
 
  
 typedef struct
@@ -31821,14 +31723,14 @@ ret_code_t nrf_drv_timer_init(nrf_drv_timer_t const * const p_instance,
     if (p_cb->state != NRF_DRV_STATE_UNINITIALIZED)
     {
         err_code = ((0x0) + 8);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
         return err_code;
     }
 
     if (timer_event_handler == 0)
     {
         err_code = ((0x0) + 7);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
         return err_code;
     }
 
@@ -31863,7 +31765,7 @@ ret_code_t nrf_drv_timer_init(nrf_drv_timer_t const * const p_instance,
     p_cb->state = NRF_DRV_STATE_INITIALIZED;
 
     err_code = ((0x0) + 0);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -31882,7 +31784,7 @@ void nrf_drv_timer_uninit(nrf_drv_timer_t const * const p_instance)
     }
 
     m_cb[p_instance->instance_id].state = NRF_DRV_STATE_UNINITIALIZED;
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Uninitialized instance: %d.", (uint32_t)(p_instance ->instance_id)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Uninitialized instance: %d."); (void)(p_instance ->instance_id); } };
 }
 
 void nrf_drv_timer_enable(nrf_drv_timer_t const * const p_instance)
@@ -31890,7 +31792,7 @@ void nrf_drv_timer_enable(nrf_drv_timer_t const * const p_instance)
     if (0) { if (m_cb[p_instance ->instance_id]. state == NRF_DRV_STATE_INITIALIZED) { } else { assert_nrf_callback((uint16_t)160, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\timer\\nrf_drv_timer.c"); } };
     nrf_timer_task_trigger(p_instance->p_reg, NRF_TIMER_TASK_START);
     m_cb[p_instance->instance_id].state = NRF_DRV_STATE_POWERED_ON;
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Enabled instance: %d.", (uint32_t)(p_instance ->instance_id)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Enabled instance: %d."); (void)(p_instance ->instance_id); } };
 }
 
 void nrf_drv_timer_disable(nrf_drv_timer_t const * const p_instance)
@@ -31898,21 +31800,21 @@ void nrf_drv_timer_disable(nrf_drv_timer_t const * const p_instance)
     if (0) { if (m_cb[p_instance ->instance_id]. state == NRF_DRV_STATE_POWERED_ON) { } else { assert_nrf_callback((uint16_t)168, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\timer\\nrf_drv_timer.c"); } };
     nrf_timer_task_trigger(p_instance->p_reg, NRF_TIMER_TASK_SHUTDOWN);
     m_cb[p_instance->instance_id].state = NRF_DRV_STATE_INITIALIZED;
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Disabled instance: %d.", (uint32_t)(p_instance ->instance_id)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Disabled instance: %d."); (void)(p_instance ->instance_id); } };
 }
 
 void nrf_drv_timer_resume(nrf_drv_timer_t const * const p_instance)
 {
     if (0) { if (m_cb[p_instance ->instance_id]. state == NRF_DRV_STATE_POWERED_ON) { } else { assert_nrf_callback((uint16_t)176, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\timer\\nrf_drv_timer.c"); } };
     nrf_timer_task_trigger(p_instance->p_reg, NRF_TIMER_TASK_START);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Resumed instance: %d.", (uint32_t)(p_instance ->instance_id)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Resumed instance: %d."); (void)(p_instance ->instance_id); } };
 }
 
 void nrf_drv_timer_pause(nrf_drv_timer_t const * const p_instance)
 {
     if (0) { if (m_cb[p_instance ->instance_id]. state == NRF_DRV_STATE_POWERED_ON) { } else { assert_nrf_callback((uint16_t)183, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\timer\\nrf_drv_timer.c"); } };
     nrf_timer_task_trigger(p_instance->p_reg, NRF_TIMER_TASK_STOP);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Paused instance: %d.", (uint32_t)(p_instance ->instance_id)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Paused instance: %d."); (void)(p_instance ->instance_id); } };
 }
 
 void nrf_drv_timer_clear(nrf_drv_timer_t const * const p_instance)
@@ -31957,7 +31859,7 @@ void nrf_drv_timer_compare(nrf_drv_timer_t const * const p_instance,
     }
 
     nrf_timer_cc_write(p_instance->p_reg, cc_channel, cc_value);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_3(((3UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Timer id: %d, capture value set: %d, channel: %d.", (uint32_t)(p_instance ->instance_id), (uint32_t)(cc_value), (uint32_t)(cc_channel)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Timer id: %d, capture value set: %d, channel: %d."); (void)(p_instance ->instance_id); (void)(cc_value); (void)(cc_channel); } };
 }
 
 void nrf_drv_timer_extended_compare(nrf_drv_timer_t const * const p_instance,
@@ -31976,7 +31878,7 @@ void nrf_drv_timer_extended_compare(nrf_drv_timer_t const * const p_instance,
                                 cc_channel,
                                 cc_value,
                                 enable_int);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_3(((3UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Timer id: %d, capture value set: %d, channel: %d.", (uint32_t)(p_instance ->instance_id), (uint32_t)(cc_value), (uint32_t)(cc_channel)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Timer id: %d, capture value set: %d, channel: %d."); (void)(p_instance ->instance_id); (void)(cc_value); (void)(cc_channel); } };
 }
 
 void nrf_drv_timer_compare_int_enable(nrf_drv_timer_t const * const p_instance,
@@ -32015,7 +31917,7 @@ static void irq_handler(NRF_TIMER_Type * p_reg,
             nrf_timer_int_enable_check(p_reg, int_mask))
         {
             nrf_timer_event_clear(p_reg, event);
-            if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_timer_logs_data_dynamic . module_id << 16), "Compare event, channel: %d.", (uint32_t)(i)); } };
+            if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Compare event, channel: %d."); (void)(i); } };
             p_cb->handler(event, p_cb->context);
         }
     }

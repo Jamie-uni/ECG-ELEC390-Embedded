@@ -32667,100 +32667,7 @@ uint8_t privilege_level_get(void);
 
 
 #line 54 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -32881,9 +32788,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -33291,8 +33195,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -33303,7 +33205,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\uart\\nrf_drv_uart.c"
-__root const nrf_log_module_const_data_t m_nrf_log_uart_logs_data_const @ "log_const_data" = { . p_module_name = "uart", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 0, }; __root nrf_log_module_dynamic_data_t m_nrf_log_uart_logs_data_dynamic @ "log_dynamic_data";
+;
 
 
     
@@ -33430,7 +33332,7 @@ ret_code_t nrf_drv_uart_init(const nrf_drv_uart_t * p_instance, nrf_drv_uart_con
     if (p_cb->state != NRF_DRV_STATE_UNINITIALIZED)
     {
         err_code = ((0x0) + 8);
-        if (1 && (0 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_1(((1UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "Init failed. id:%d in wrong state", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg))); } };
+        if (0 && (0 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("Init failed. id:%d in wrong state"); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); } };
         return err_code;
     }
 
@@ -33471,7 +33373,7 @@ void nrf_drv_uart_uninit(const nrf_drv_uart_t * p_instance)
 
     p_cb->state = NRF_DRV_STATE_UNINITIALIZED;
     p_cb->handler = 0;
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "Uninit id: %d.", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Uninit id: %d."); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); } };
 }
 
 
@@ -33565,24 +33467,24 @@ ret_code_t nrf_drv_uart_tx(const nrf_drv_uart_t * p_instance, uint8_t const * co
 
     ret_code_t err_code;
 
-    if (m_cb[p_instance ->drv_inst_idx]. use_easy_dma) { if (!nrf_drv_is_in_RAM(p_data)) { err_code = ((0x0) + 16); if (1 && (0 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_2(((1UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "Id:%d, Easy-DMA buffer not in RAM: %08x", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)), (uint32_t)(p_data)); } }; return err_code; } }
+    if (m_cb[p_instance ->drv_inst_idx]. use_easy_dma) { if (!nrf_drv_is_in_RAM(p_data)) { err_code = ((0x0) + 16); if (0 && (0 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("Id:%d, Easy-DMA buffer not in RAM: %08x"); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); (void)(p_data); } }; return err_code; } }
 #line 426 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\uart\\nrf_drv_uart.c"
 
     if (nrf_drv_uart_tx_in_progress(p_instance))
     {
         err_code = ((0x0) + 17);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_1(((2UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "Id:%d busy", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Id:%d busy"); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); } };
         return err_code;
     }
     p_cb->tx_buffer_length = length;
     p_cb->p_tx_buffer      = p_data;
     p_cb->tx_counter       = 0;
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "TX req id:%d length: %d.", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)), (uint32_t)(p_cb->tx_buffer_length)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("TX req id:%d length: %d."); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); (void)(p_cb->tx_buffer_length); } };
 
 
-    if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_0(((4UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "Tx data:"); } };
-    if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_hexdump((((4UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16)), (((uint8_t *)p_cb->p_tx_buffer)), ((p_cb->tx_buffer_length * sizeof(p_cb->p_tx_buffer[0])))); } };
+    if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Tx data:"); } };
+    if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)(((uint8_t *)p_cb->p_tx_buffer)); (void)(p_cb->tx_buffer_length * sizeof(p_cb->p_tx_buffer[0])); } };
 
 
     if (m_cb[p_instance ->drv_inst_idx]. use_easy_dma) { return nrf_drv_uart_tx_for_uarte(p_instance); }
@@ -33660,13 +33562,13 @@ static inline ret_code_t nrf_drv_uart_rx_for_uart(const nrf_drv_uart_t * p_insta
         if (error)
         {
             err_code = ((0x0) + 3);
-            if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_1(((2UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "RX Id: %d, transfer error.", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg))); } };
+            if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("RX Id: %d, transfer error."); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); } };
             return err_code;
         }
 
         if (rxto)
         {
-            if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_1(((2UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "RX Id: %d, aborted.", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg))); } };
+            if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("RX Id: %d, aborted."); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); } };
             err_code = ((0x0) + 15);
             return err_code;
         }
@@ -33746,7 +33648,7 @@ ret_code_t nrf_drv_uart_rx(const nrf_drv_uart_t * p_instance, uint8_t * p_data, 
 
     ret_code_t err_code;
 
-    if (m_cb[p_instance ->drv_inst_idx]. use_easy_dma) { if (!nrf_drv_is_in_RAM(p_data)) { err_code = ((0x0) + 16); if (1 && (0 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { nrf_log_frontend_std_2(((1UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "Id:%d, Easy-DMA buffer not in RAM: %08x", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)), (uint32_t)(p_data)); } }; return err_code; } }
+    if (m_cb[p_instance ->drv_inst_idx]. use_easy_dma) { if (!nrf_drv_is_in_RAM(p_data)) { err_code = ((0x0) + 16); if (0 && (0 >= 1UL) && (1UL <= 3)) { if (4UL >= 1UL) { (void)(((1UL) | 0 << 16)); (void)("Id:%d, Easy-DMA buffer not in RAM: %08x"); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); (void)(p_data); } }; return err_code; } }
 #line 617 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\uart\\nrf_drv_uart.c"
 
     _Bool second_buffer = 0;
@@ -33778,7 +33680,7 @@ ret_code_t nrf_drv_uart_rx(const nrf_drv_uart_t * p_instance, uint8_t * p_data, 
 
             }
             err_code = ((0x0) + 17);
-            if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_1(((2UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "RX Id:%d, busy", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg))); } };
+            if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("RX Id:%d, busy"); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); } };
             return err_code;
         }
         second_buffer = 1;
@@ -33797,7 +33699,7 @@ ret_code_t nrf_drv_uart_rx(const nrf_drv_uart_t * p_instance, uint8_t * p_data, 
         p_cb->rx_secondary_buffer_length = length;
     }
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "RX Id:%d len:%d", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)), (uint32_t)(length)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("RX Id:%d len:%d"); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); (void)(length); } };
 
     if (m_cb[p_instance ->drv_inst_idx]. use_easy_dma) { return nrf_drv_uart_rx_for_uarte(p_instance, p_data, length, second_buffer); }
 
@@ -33883,7 +33785,7 @@ static inline void tx_done_event(uart_control_block_t * p_cb, uint8_t bytes)
 
     p_cb->tx_buffer_length = 0;
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "TX done len:%d", (uint32_t)(bytes)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("TX done len:%d"); (void)(bytes); } };
     p_cb->handler(&event, p_cb->p_context);
 }
 
@@ -33895,7 +33797,7 @@ void nrf_drv_uart_tx_abort(const nrf_drv_uart_t * p_instance)
 #line 775 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\uart\\nrf_drv_uart.c"
     else { nrf_uart_task_trigger(p_instance ->reg . p_uart, NRF_UART_TASK_STOPTX); if (p_cb->handler) { tx_done_event(p_cb, p_cb->tx_counter); } else { p_cb->tx_counter = 256; } }
 #line 787 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\uart\\nrf_drv_uart.c"
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "TX abort Id:%d", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("TX abort Id:%d"); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); } };
 }
 
 void nrf_drv_uart_rx_abort(const nrf_drv_uart_t * p_instance)
@@ -33909,7 +33811,7 @@ void nrf_drv_uart_rx_abort(const nrf_drv_uart_t * p_instance)
 
 
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_uart_logs_data_dynamic . module_id << 16), "RX abort Id:%d", (uint32_t)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("RX abort Id:%d"); (void)(nrf_drv_get_IRQn((void *)p_instance ->reg . p_reg)); } };
 }
 
 

@@ -32049,100 +32049,7 @@ static inline void nrf_bitmask_masks_and(void const *   p_mask1,
 
 
 #line 54 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -32263,9 +32170,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -32673,8 +32577,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -32685,7 +32587,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 59 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\gpiote\\nrf_drv_gpiote.c"
-__root const nrf_log_module_const_data_t m_nrf_log_gpiote_logs_data_const @ "log_const_data" = { . p_module_name = "gpiote", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 0, }; __root nrf_log_module_dynamic_data_t m_nrf_log_gpiote_logs_data_dynamic @ "log_dynamic_data";
+;
 
  
 static_assert((((((7)) > 1) && (((7)) < 4)) || ((((7)) > 4) && (((7)) < 8))), "unspecified message");
@@ -32852,7 +32754,7 @@ ret_code_t nrf_drv_gpiote_init(void)
     if (m_cb.state != NRF_DRV_STATE_UNINITIALIZED)
     {
         err_code = ((0x0) + 8);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_gpiote_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
 
         return err_code;
@@ -32876,7 +32778,7 @@ ret_code_t nrf_drv_gpiote_init(void)
     m_cb.state = NRF_DRV_STATE_INITIALIZED;
 
     err_code = ((0x0) + 0);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_gpiote_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
     return err_code;
 }
@@ -32909,7 +32811,7 @@ void nrf_drv_gpiote_uninit(void)
         }
     }
     m_cb.state = NRF_DRV_STATE_UNINITIALIZED;
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_gpiote_logs_data_dynamic . module_id << 16), "Uninitialized."); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Uninitialized."); } };
 }
 
 
@@ -32961,7 +32863,7 @@ ret_code_t nrf_drv_gpiote_out_init(nrf_drv_gpiote_pin_t                pin,
         }
     }
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_gpiote_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
     return err_code;
 }
@@ -33162,7 +33064,7 @@ ret_code_t nrf_drv_gpiote_in_init(nrf_drv_gpiote_pin_t               pin,
         }
     }
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_gpiote_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
     return err_code;
 }
@@ -33309,10 +33211,10 @@ void GPIOTE_IRQHandler(void)
             if (mask & status)
             {
                 nrf_drv_gpiote_pin_t pin = nrf_gpiote_event_pin_get(i);
-                if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_gpiote_logs_data_dynamic . module_id << 16), "Event in number: %d.", (uint32_t)(i)); } };
+                if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Event in number: %d."); (void)(i); } };
                 nrf_gpiote_polarity_t        polarity = nrf_gpiote_event_polarity_get(i);
                 nrf_drv_gpiote_evt_handler_t handler  = channel_handler_get(i);
-                if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_gpiote_logs_data_dynamic . module_id << 16), "Pin: %d, polarity: %d.", (uint32_t)(pin), (uint32_t)(polarity)); } };
+                if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Pin: %d, polarity: %d."); (void)(pin); (void)(polarity); } };
                 if (handler)
                 {
                     handler(pin, polarity);
@@ -33364,7 +33266,7 @@ void GPIOTE_IRQHandler(void)
                         if ((pin_state && (sense == NRF_GPIO_PIN_SENSE_HIGH)) ||
                             (!pin_state && (sense == NRF_GPIO_PIN_SENSE_LOW))  )
                         {
-                            if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_gpiote_logs_data_dynamic . module_id << 16), "PORT event for pin: %d, polarity: %d.", (uint32_t)(pin), (uint32_t)(polarity)); } };
+                            if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("PORT event for pin: %d, polarity: %d."); (void)(pin); (void)(polarity); } };
 
                             if (polarity == NRF_GPIOTE_POLARITY_TOGGLE)
                             {

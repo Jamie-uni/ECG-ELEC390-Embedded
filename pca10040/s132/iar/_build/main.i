@@ -1,52 +1,5 @@
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
 #line 1 "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.0\\arm\\inc\\c\\stdbool.h"
  
  
@@ -73,7 +26,7 @@
 
 
  
-#line 50 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 3 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.0\\arm\\inc\\c\\stdint.h"
  
  
@@ -1156,7 +1109,7 @@ typedef int __data_intptr_t; typedef unsigned int __data_uintptr_t;
 
 
  
-#line 51 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 4 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.0\\arm\\inc\\c\\stdio.h"
  
  
@@ -1403,7 +1356,7 @@ typedef _Fpost fpos_t;
 
 
  
-#line 52 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 5 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.0\\arm\\inc\\c\\string.h"
  
  
@@ -1594,7 +1547,7 @@ typedef _Fpost fpos_t;
 
 
  
-#line 53 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 6 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\util\\nordic_common.h"
 
 
@@ -1775,7 +1728,7 @@ typedef _Fpost fpos_t;
 
 
 
-#line 54 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 7 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\device\\nrf.h"
 
 
@@ -19830,7 +19783,7 @@ typedef struct {
 
 
 
-#line 55 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 8 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\drivers_nrf\\saadc\\nrf_drv_saadc.h"
 
 
@@ -28766,7 +28719,7 @@ void nrf_drv_saadc_limits_set(uint8_t channel, int16_t limit_low, int16_t limit_
 
 
  
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 9 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\softdevice\\s132\\headers\\nrf_sdm.h"
 
 
@@ -30244,7 +30197,7 @@ _Pragma("swi_number = (SD_SOFTDEVICE_VECTOR_TABLE_BASE_SET)") __swi uint32_t sd_
 
 
  
-#line 57 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 10 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 
 
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\softdevice\\s132\\headers\\ble.h"
@@ -35531,7 +35484,7 @@ _Pragma("swi_number = (SD_BLE_OPT_GET)") __swi uint32_t sd_ble_opt_get(uint32_t 
 
 
  
-#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 13 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\softdevice\\s132\\headers\\ble_hci.h"
 
 
@@ -35668,7 +35621,7 @@ _Pragma("swi_number = (SD_BLE_OPT_GET)") __swi uint32_t sd_ble_opt_get(uint32_t 
 
 
  
-#line 62 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 15 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\ble\\common\\ble_srv_common.h"
 
 
@@ -35953,7 +35906,7 @@ uint32_t descriptor_add(uint16_t                   char_handle,
 
 
  
-#line 63 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 16 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\ble\\common\\ble_advdata.h"
 
 
@@ -36170,7 +36123,7 @@ uint32_t ble_advdata_set(const ble_advdata_t * p_advdata, const ble_advdata_t * 
 
 
  
-#line 64 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 17 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\ble\\ble_advertising\\ble_advertising.h"
 
 
@@ -36506,7 +36459,7 @@ void ble_advertising_modes_config_set(ble_advertising_t            * const p_adv
 
 
  
-#line 65 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 18 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\ble\\ble_services\\ble_bas\\ble_bas.h"
 
 
@@ -37168,7 +37121,7 @@ uint32_t ble_bas_battery_level_update(ble_bas_t * p_bas, uint8_t battery_level);
 
 
  
-#line 66 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 19 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\ble\\ble_services\\ble_hrs\\ble_hrs.h"
 
 
@@ -37538,100 +37491,7 @@ uint16_t nrf_ble_gatt_eff_mtu_get(nrf_ble_gatt_t const * p_gatt, uint16_t conn_h
 
 
 
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -37752,9 +37612,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -38162,8 +38019,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -38275,25 +38130,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #line 76 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_ctrl_internal.h"
 
@@ -40265,7 +40101,7 @@ uint32_t ble_hrs_body_sensor_location_set(ble_hrs_t * p_hrs, uint8_t body_sensor
 
 
  
-#line 67 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 20 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\ble\\ble_services\\ble_dis\\ble_dis.h"
 
 
@@ -40401,7 +40237,7 @@ uint32_t ble_dis_init(ble_dis_init_t const * p_dis_init);
 
 
  
-#line 68 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 21 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\ble\\common\\ble_conn_params.h"
 
 
@@ -40559,7 +40395,7 @@ ret_code_t ble_conn_params_change_conn_params(uint16_t                conn_handl
 
 
  
-#line 69 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 22 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\sensorsim\\sensorsim.h"
 
 
@@ -40682,7 +40518,7 @@ void sensorsim_decrement(sensorsim_state_t *     p_state,
 
 
  
-#line 70 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 23 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\softdevice\\common\\nrf_sdh.h"
 
 
@@ -40988,7 +40824,7 @@ void nrf_sdh_evts_poll(void);
 
 
  
-#line 71 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 24 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\softdevice\\common\\nrf_sdh_soc.h"
 
 
@@ -41106,7 +40942,7 @@ typedef struct
 
 
  
-#line 73 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 26 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\timer\\app_timer.h"
 
 
@@ -41355,7 +41191,7 @@ void app_timer_resume(void);
 
 
  
-#line 74 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 27 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\bsp\\bsp_btn_ble.h"
 
 
@@ -43339,7 +43175,7 @@ uint32_t bsp_btn_ble_sleep_mode_prepare(void);
 
 
  
-#line 75 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 28 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\ble\\peer_manager\\peer_manager.h"
 
 
@@ -45036,7 +44872,7 @@ ret_code_t pm_peer_rank_highest(pm_peer_id_t peer_id);
 
 
 
-#line 76 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 29 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\fds\\fds.h"
 
 
@@ -45737,7 +45573,7 @@ ret_code_t fds_stat(fds_stat_t * p_stat);
 
 
 
-#line 77 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 30 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\ble\\common\\ble_conn_state.h"
 
 
@@ -46251,7 +46087,7 @@ sdk_mapped_flags_t ble_conn_state_user_flag_collection(ble_conn_state_user_flag_
 
 
 
-#line 79 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 32 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 
 
 
@@ -47131,7 +46967,7 @@ static inline uint32_t nrf_drv_ppi_task_addr_group_disable_get(nrf_ppi_channel_g
 
 
 
-#line 85 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 38 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\drivers_nrf\\timer\\nrf_drv_timer.h"
 
 
@@ -48137,7 +47973,7 @@ static inline uint32_t nrf_drv_timer_ms_to_ticks(
 
 
  
-#line 86 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 39 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\drivers_nrf\\delay\\nrf_delay.h"
 
 
@@ -48318,7 +48154,7 @@ static inline void nrf_delay_ms(uint32_t number_of_ms)
 
 
 
-#line 89 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 42 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\pwr_mgmt\\nrf_pwr_mgmt.h"
 
 
@@ -48470,7 +48306,7 @@ void nrf_pwr_mgmt_shutdown(nrf_pwr_mgmt_shutdown_t shutdown_type);
 
 
  
-#line 91 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 44 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 #line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\drivers_nrf\\power\\nrf_drv_power.h"
 
 
@@ -49603,7 +49439,7 @@ void nrf_drv_power_sleepevt_uninit(void);
 
 
 
-#line 92 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 45 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 
 
 
@@ -49641,7 +49477,7 @@ void nrf_drv_power_sleepevt_uninit(void);
 
 
 
-#line 137 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 90 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 
 
 
@@ -49669,7 +49505,7 @@ static sensorsim_state_t m_rr_interval_sim_state;
 
  
 
-#line 173 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
+#line 126 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"
 
 
 void saadc_init(void);
@@ -49685,12 +49521,12 @@ static uint32_t                m_adc_evt_counter = 0;
 void saadc_callback(nrf_drv_saadc_evt_t const * p_event)
 {
     ret_code_t err_code;
-        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "SAADC callback! \r\n"); } };                                              
+        if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("SAADC callback! \r\n"); } };                                              
 
     if (p_event->type == NRF_DRV_SAADC_EVT_DONE)                                                        
     {
 			
-        do { uint32_t gpio_state = ((NRF_GPIO_Type *) 0x50000000UL)->OUT; if (0) { if (sizeof((1<<18)) == 4) { } else { assert_nrf_callback((uint16_t)193, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"); } }; ((NRF_GPIO_Type *) 0x50000000UL)->OUTSET = (((1<<18)) & ~gpio_state); ((NRF_GPIO_Type *) 0x50000000UL)->OUTCLR = (((1<<18)) & gpio_state); } while (0);                                                                    
+        do { uint32_t gpio_state = ((NRF_GPIO_Type *) 0x50000000UL)->OUT; if (0) { if (sizeof((1<<18)) == 4) { } else { assert_nrf_callback((uint16_t)146, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"); } }; ((NRF_GPIO_Type *) 0x50000000UL)->OUTSET = (((1<<18)) & ~gpio_state); ((NRF_GPIO_Type *) 0x50000000UL)->OUTCLR = (((1<<18)) & gpio_state); } while (0);                                                                    
 
        
         
@@ -49699,18 +49535,22 @@ void saadc_callback(nrf_drv_saadc_evt_t const * p_event)
         
         
 
-        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "ADC event number: %d\r\n", (uint32_t)((int)m_adc_evt_counter)); } };                                
-
+        if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("ADC event number: %d\r\n"); (void)((int)m_adc_evt_counter); } };                                
+        int avg = 0;
         for (int i = 0; i < p_event->data.done.size; i++)
         {
-            if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "%d\r\n", (uint32_t)(p_event->data . done . p_buffer[i])); } };                                     
+            if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("%d\r\n"); (void)(p_event->data . done . p_buffer[i]); } };                                     
+            avg += p_event->data.done.p_buffer[i];
         }
-        ble_hrs_heart_rate_measurement_send(&m_hrs, (uint16_t) (p_event->data.done.p_buffer[0]+0xFF));
+        avg /= p_event->data.done.size;
+        if (avg < 0)
+          avg = 0;
+        ble_hrs_heart_rate_measurement_send(&m_hrs, (uint16_t) avg + 0x100);
     
       
-        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "sent packet %u", (uint32_t)((uint16_t) (p_event->data . done . p_buffer[0]+0xFF))); } };
+        if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("sent packet %u"); (void)((uint16_t) avg + 0x100); } };
             err_code = nrf_drv_saadc_buffer_convert(p_event->data.done.p_buffer, 4);             
-            do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
+           
         
 
         m_adc_evt_counter++;
@@ -49718,14 +49558,14 @@ void saadc_callback(nrf_drv_saadc_evt_t const * p_event)
     }
     else if (p_event->type == NRF_DRV_SAADC_EVT_CALIBRATEDONE)
     {
-        do { uint32_t gpio_state = ((NRF_GPIO_Type *) 0x50000000UL)->OUT; if (0) { if (sizeof((1<<19)) == 4) { } else { assert_nrf_callback((uint16_t)221, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"); } }; ((NRF_GPIO_Type *) 0x50000000UL)->OUTSET = (((1<<19)) & ~gpio_state); ((NRF_GPIO_Type *) 0x50000000UL)->OUTCLR = (((1<<19)) & gpio_state); } while (0);                                                                    
+        do { uint32_t gpio_state = ((NRF_GPIO_Type *) 0x50000000UL)->OUT; if (0) { if (sizeof((1<<19)) == 4) { } else { assert_nrf_callback((uint16_t)178, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\main.c"); } }; ((NRF_GPIO_Type *) 0x50000000UL)->OUTSET = (((1<<19)) & ~gpio_state); ((NRF_GPIO_Type *) 0x50000000UL)->OUTCLR = (((1<<19)) & gpio_state); } while (0);                                                                    
         
         err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[0], 4);             
         do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
         err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[1], 4);             
         do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
         
-        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "SAADC calibration complete ! \r\n"); } };                                              
+        if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("SAADC calibration complete ! \r\n"); } };                                              
         
     }
 }
@@ -49736,14 +49576,14 @@ void saadc_init(void)
     ret_code_t err_code;
     nrf_drv_saadc_config_t saadc_config;
     nrf_saadc_channel_config_t channel_config;
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "SAADC init! \r\n"); } };                                              
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("SAADC init! \r\n"); } };                                              
 
 
 	
     
     saadc_config.low_power_mode = 1;                                                   
     saadc_config.resolution = NRF_SAADC_RESOLUTION_12BIT;                                 
-    saadc_config.oversample = NRF_SAADC_OVERSAMPLE_4X;                                           
+    saadc_config.oversample = NRF_SAADC_OVERSAMPLE_DISABLED;                                           
     saadc_config.interrupt_priority = APP_IRQ_PRIORITY_LOW;                               
 	
     
@@ -49811,7 +49651,7 @@ static void delete_bonds(void)
 {
     ret_code_t err_code;
 
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Erase bonds!"); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Erase bonds!"); } };
 
     err_code = pm_peers_delete();
     do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
@@ -49846,7 +49686,7 @@ static void fds_evt_handler(fds_evt_t const * const p_evt)
 {
     if (p_evt->id == FDS_EVT_GC)
     {
-        if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_0(((4UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "GC completed\n"); } };
+        if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("GC completed\n"); } };
     }
 }
 
@@ -49863,12 +49703,12 @@ static void pm_evt_handler(pm_evt_t const * p_evt)
     {
         case PM_EVT_BONDED_PEER_CONNECTED:
         {
-            if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Connected to a previously bonded device."); } };
+            if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Connected to a previously bonded device."); } };
         } break;
 
         case PM_EVT_CONN_SEC_SUCCEEDED:
         {
-            if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_3(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Connection secured: role: %d, conn_handle: 0x%x, procedure: %d.", (uint32_t)(ble_conn_state_role(p_evt->conn_handle)), (uint32_t)(p_evt->conn_handle), (uint32_t)(p_evt->params . conn_sec_succeeded . procedure)); } };
+            if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Connection secured: role: %d, conn_handle: 0x%x, procedure: %d."); (void)(ble_conn_state_role(p_evt->conn_handle)); (void)(p_evt->conn_handle); (void)(p_evt->params . conn_sec_succeeded . procedure); } };
 
 
 
@@ -49907,7 +49747,7 @@ static void pm_evt_handler(pm_evt_t const * p_evt)
 
         case PM_EVT_PEERS_DELETE_SUCCEEDED:
         {
-            if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_0(((4UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "PM_EVT_PEERS_DELETE_SUCCEEDED"); } };
+            if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("PM_EVT_PEERS_DELETE_SUCCEEDED"); } };
             advertising_start(0);
         } break;
 
@@ -50026,6 +49866,9 @@ static void heart_rate_meas_timeout_handler(void * p_context)
 
  
     nrf_drv_saadc_sample(); 
+    nrf_delay_ms(2);
+    nrf_drv_saadc_sample(); 
+
 
 }
 
@@ -50160,7 +50003,7 @@ static void gatt_evt_handler(nrf_ble_gatt_t * p_gatt, nrf_ble_gatt_evt_t const *
 {
     if (p_evt->evt_id == NRF_BLE_GATT_EVT_ATT_MTU_UPDATED)
     {
-        if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "GATT ATT MTU on connection 0x%x changed to %d.", (uint32_t)(p_evt->conn_handle), (uint32_t)(p_evt->params . att_mtu_effective)); } };
+        if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("GATT ATT MTU on connection 0x%x changed to %d."); (void)(p_evt->conn_handle); (void)(p_evt->params . att_mtu_effective); } };
 
 
     }
@@ -50278,7 +50121,7 @@ static void application_timers_start(void)
     err_code = app_timer_start(m_battery_timer_id, ((uint32_t)((((2000) * (uint64_t)32768) + ((1000 * (0 + 1)) / 2)) / (1000 * (0 + 1)))), 0);
     do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
 
-    err_code = app_timer_start(m_heart_rate_timer_id, ((uint32_t)((((50) * (uint64_t)32768) + ((1000 * (0 + 1)) / 2)) / (1000 * (0 + 1)))), 0);
+    err_code = app_timer_start(m_heart_rate_timer_id, ((uint32_t)((((1) * (uint64_t)32768) + ((1000 * (0 + 1)) / 2)) / (1000 * (0 + 1)))), 0);
     do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
 
     err_code = app_timer_start(m_rr_interval_timer_id, ((uint32_t)((((300) * (uint64_t)32768) + ((1000 * (0 + 1)) / 2)) / (1000 * (0 + 1)))), 0);
@@ -50378,7 +50221,7 @@ static void on_adv_evt(ble_adv_evt_t ble_adv_evt)
     switch (ble_adv_evt)
     {
         case BLE_ADV_EVT_FAST:
-            if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Fast advertising."); } };
+            if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Fast advertising."); } };
             err_code = bsp_indication_set(BSP_INDICATE_ADVERTISING);
             do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
             break;
@@ -50405,14 +50248,14 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
     switch (p_ble_evt->header.evt_id)
     {
         case BLE_GAP_EVT_CONNECTED:
-            if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Connected."); } };
+            if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Connected."); } };
             err_code = bsp_indication_set(BSP_INDICATE_CONNECTED);
             do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
             m_conn_handle = p_ble_evt->evt.gap_evt.conn_handle;
             break;
 
         case BLE_GAP_EVT_DISCONNECTED:
-            if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Disconnected, reason %d.", (uint32_t)(p_ble_evt->evt . gap_evt . params . disconnected . reason)); } };
+            if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Disconnected, reason %d."); (void)(p_ble_evt->evt . gap_evt . params . disconnected . reason); } };
 
             m_conn_handle = 0xFFFF;
             break;
@@ -50420,7 +50263,7 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
 
         case BLE_GAP_EVT_PHY_UPDATE_REQUEST:
         {
-            if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_0(((4UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "PHY update request."); } };
+            if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("PHY update request."); } };
             ble_gap_phys_t const phys =
             {
                 .rx_phys = 0x00,
@@ -50433,7 +50276,7 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
 
         case BLE_GATTC_EVT_TIMEOUT:
             
-            if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_0(((4UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "GATT Client Timeout."); } };
+            if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("GATT Client Timeout."); } };
             err_code = sd_ble_gap_disconnect(p_ble_evt->evt.gattc_evt.conn_handle,
                                              0x13);
             do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
@@ -50441,7 +50284,7 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
 
         case BLE_GATTS_EVT_TIMEOUT:
             
-            if (1 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_0(((4UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "GATT Server Timeout."); } };
+            if (0 && (3 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("GATT Server Timeout."); } };
             err_code = sd_ble_gap_disconnect(p_ble_evt->evt.gatts_evt.conn_handle,
                                              0x13);
             do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
@@ -50642,10 +50485,10 @@ static void buttons_leds_init(_Bool * p_erase_bonds)
  
 static void log_init(void)
 {
-    ret_code_t err_code = nrf_log_init(0);
+    ret_code_t err_code = ((0x0) + 0);
     do { const uint32_t LOCAL_ERR_CODE = (err_code); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler_bare((LOCAL_ERR_CODE)); } while (0); } } while (0);
 
-    nrf_log_default_backends_init();
+    ;
 }
 
 
@@ -50686,11 +50529,11 @@ int main(void)
     peer_manager_init();
 
     
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "Heart Rate Sensor example started."); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Heart Rate Sensor example started."); } };
     application_timers_start();
 
     advertising_start(erase_bonds);
-    if (1 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_app_logs_data_dynamic . module_id << 16), "SAADAAAAAC HAL simple example."); } };
+    if (0 && (3 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("SAADAAAAAC HAL simple example."); } };
     saadc_init();
     
     
@@ -50698,7 +50541,7 @@ int main(void)
     for (;;)
     {
         
-        if (nrf_log_frontend_dequeue() == 0)
+        if (0 == 0)
         {
             power_manage();
         }

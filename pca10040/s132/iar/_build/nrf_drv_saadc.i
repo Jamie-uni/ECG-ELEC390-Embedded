@@ -30706,100 +30706,7 @@ uint8_t privilege_level_get(void);
 
 
 #line 54 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -30920,9 +30827,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -31330,8 +31234,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -31342,7 +31244,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 64 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\drivers_nrf\\saadc\\nrf_drv_saadc.c"
-__root const nrf_log_module_const_data_t m_nrf_log_saadc_logs_data_const @ "log_const_data" = { . p_module_name = "saadc", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 0, }; __root nrf_log_module_dynamic_data_t m_nrf_log_saadc_logs_data_dynamic @ "log_dynamic_data";
+;
 
 
 typedef enum
@@ -31388,7 +31290,7 @@ void SAADC_IRQHandler(void)
     if (nrf_saadc_event_check(NRF_SAADC_EVENT_END))
     {
         nrf_saadc_event_clear(NRF_SAADC_EVENT_END);
-        if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Event: %s.", (uint32_t)("")); } };
+        if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Event: %s."); (void)(""); } };
 
         if (!m_cb.low_power_mode || m_cb.conversions_end)
         {
@@ -31419,7 +31321,7 @@ void SAADC_IRQHandler(void)
     if (m_cb.low_power_mode && nrf_saadc_event_check(NRF_SAADC_EVENT_STARTED))
     {
         nrf_saadc_event_clear(NRF_SAADC_EVENT_STARTED);
-        if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Event: %s.", (uint32_t)("")); } };
+        if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Event: %s."); (void)(""); } };
 
         if (m_cb.buffer_size_left > m_cb.active_channels)
         {
@@ -31451,7 +31353,7 @@ void SAADC_IRQHandler(void)
     if (nrf_saadc_event_check(NRF_SAADC_EVENT_CALIBRATEDONE))
     {
         nrf_saadc_event_clear(NRF_SAADC_EVENT_CALIBRATEDONE);
-        if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Event: %s.", (uint32_t)("")); } };
+        if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Event: %s."); (void)(""); } };
         m_cb.adc_state = NRF_SAADC_STATE_IDLE;
 
         nrf_drv_saadc_evt_t evt;
@@ -31461,7 +31363,7 @@ void SAADC_IRQHandler(void)
     if (nrf_saadc_event_check(NRF_SAADC_EVENT_STOPPED))
     {
         nrf_saadc_event_clear(NRF_SAADC_EVENT_STOPPED);
-        if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_1(((4UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Event: %s.", (uint32_t)("")); } };
+        if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Event: %s."); (void)(""); } };
         m_cb.adc_state = NRF_SAADC_STATE_IDLE;
     }
     else
@@ -31482,7 +31384,7 @@ void SAADC_IRQHandler(void)
                 evt.type                  = NRF_DRV_SAADC_EVT_LIMIT;
                 evt.data.limit.channel    = (uint8_t)(((uint32_t)event - (uint32_t)NRF_SAADC_EVENT_CH0_LIMITH) / 8);
                 evt.data.limit.limit_type = ((((uint32_t)event - (uint32_t)NRF_SAADC_EVENT_CH0_LIMITH) & 4) ? NRF_SAADC_LIMIT_LOW : NRF_SAADC_LIMIT_HIGH);
-                if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Event limit, channel: %d, limit type: %d.", (uint32_t)(evt . data . limit . channel), (uint32_t)(evt . data . limit . limit_type)); } };
+                if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("Event limit, channel: %d, limit type: %d."); (void)(evt . data . limit . channel); (void)(evt . data . limit . limit_type); } };
 
 
                 m_cb.event_handler(&evt);
@@ -31500,14 +31402,14 @@ ret_code_t nrf_drv_saadc_init(nrf_drv_saadc_config_t const * p_config,
     if (m_cb.state != NRF_DRV_STATE_UNINITIALIZED)
     {
         err_code = ((0x0) + 8);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
         return err_code;
     }
     if (event_handler == 0)
     {
         err_code = ((0x0) + 7);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
         return err_code;
     }
@@ -31541,7 +31443,7 @@ ret_code_t nrf_drv_saadc_init(nrf_drv_saadc_config_t const * p_config,
     nrf_saadc_enable();
 
     err_code = ((0x0) + 0);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
     return err_code;
 }
@@ -31597,7 +31499,7 @@ ret_code_t nrf_drv_saadc_channel_init(uint8_t                                  c
     if (m_cb.adc_state != NRF_SAADC_STATE_IDLE)
     {
         err_code = ((0x0) + 17);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
         return err_code;
     }
@@ -31625,9 +31527,9 @@ ret_code_t nrf_drv_saadc_channel_init(uint8_t                                  c
     }
 
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Channel initialized: %d.", (uint32_t)(channel)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Channel initialized: %d."); (void)(channel); } };
     err_code = ((0x0) + 0);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -31643,7 +31545,7 @@ ret_code_t nrf_drv_saadc_channel_uninit(uint8_t channel)
     if (m_cb.adc_state != NRF_SAADC_STATE_IDLE)
     {
         err_code = ((0x0) + 17);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
         return err_code;
     }
@@ -31656,10 +31558,10 @@ ret_code_t nrf_drv_saadc_channel_uninit(uint8_t channel)
     m_cb.psel[channel].pseln = NRF_SAADC_INPUT_DISABLED;
     nrf_saadc_channel_input_set(channel, NRF_SAADC_INPUT_DISABLED, NRF_SAADC_INPUT_DISABLED);
     nrf_drv_saadc_limits_set(channel, (-2048), (2047));
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_1(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Channel denitialized: %d.", (uint32_t)(channel)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Channel denitialized: %d."); (void)(channel); } };
 
     err_code = ((0x0) + 0);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
 
     return err_code;
 }
@@ -31679,7 +31581,7 @@ ret_code_t nrf_drv_saadc_sample_convert(uint8_t channel, nrf_saadc_value_t * p_v
     if (m_cb.adc_state != NRF_SAADC_STATE_IDLE)
     {
         err_code = ((0x0) + 17);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
         return err_code;
     }
     m_cb.adc_state = NRF_SAADC_STATE_BUSY;
@@ -31706,7 +31608,7 @@ ret_code_t nrf_drv_saadc_sample_convert(uint8_t channel, nrf_saadc_value_t * p_v
     nrf_saadc_event_clear(NRF_SAADC_EVENT_STARTED);
     nrf_saadc_event_clear(NRF_SAADC_EVENT_END);
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Conversion value: %d, channel: %d.", (uint32_t)(*p_value & 0x0000FFFF), (uint32_t)(channel)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Conversion value: %d, channel: %d."); (void)(*p_value & 0x0000FFFF); (void)(channel); } };
 
     if (m_cb.active_channels > 1)
     {
@@ -31728,7 +31630,7 @@ ret_code_t nrf_drv_saadc_sample_convert(uint8_t channel, nrf_saadc_value_t * p_v
     m_cb.adc_state = NRF_SAADC_STATE_IDLE;
 
     err_code = ((0x0) + 0);
-    if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -31745,7 +31647,7 @@ ret_code_t nrf_drv_saadc_buffer_convert(nrf_saadc_value_t * p_buffer, uint16_t s
     {
         nrf_saadc_int_enable(NRF_SAADC_INT_END | NRF_SAADC_INT_CALIBRATEDONE);
         err_code = ((0x0) + 17);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
         return err_code;
     }
     if (m_cb.adc_state == NRF_SAADC_STATE_BUSY)
@@ -31754,7 +31656,7 @@ ret_code_t nrf_drv_saadc_buffer_convert(nrf_saadc_value_t * p_buffer, uint16_t s
         {
             nrf_saadc_int_enable(NRF_SAADC_INT_END);
             err_code = ((0x0) + 17);
-            if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+            if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
             return err_code;
         }
         else
@@ -31769,7 +31671,7 @@ ret_code_t nrf_drv_saadc_buffer_convert(nrf_saadc_value_t * p_buffer, uint16_t s
             }
             nrf_saadc_int_enable(NRF_SAADC_INT_END);
             err_code = ((0x0) + 0);
-            if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+            if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
             return err_code;
         }
     }
@@ -31780,7 +31682,7 @@ ret_code_t nrf_drv_saadc_buffer_convert(nrf_saadc_value_t * p_buffer, uint16_t s
     m_cb.buffer_size        = size;
     m_cb.p_secondary_buffer = 0;
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_3(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %d, buffer length: %d, active channels: %d.", (uint32_t)((uint32_t)__func__), (uint32_t)(size), (uint32_t)(m_cb . active_channels)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %d, buffer length: %d, active channels: %d."); (void)((uint32_t)__func__); (void)(size); (void)(m_cb . active_channels); } };
 
 
     if (m_cb.low_power_mode)
@@ -31796,7 +31698,7 @@ ret_code_t nrf_drv_saadc_buffer_convert(nrf_saadc_value_t * p_buffer, uint16_t s
     }
 
     err_code = ((0x0) + 0);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -31819,7 +31721,7 @@ ret_code_t nrf_drv_saadc_sample()
         nrf_saadc_task_trigger(NRF_SAADC_TASK_SAMPLE);
     }
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -31833,7 +31735,7 @@ ret_code_t nrf_drv_saadc_calibrate_offset()
     if (m_cb.adc_state != NRF_SAADC_STATE_IDLE)
     {
         err_code = ((0x0) + 17);
-        if (1 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { nrf_log_frontend_std_2(((2UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+        if (0 && (0 >= 2UL) && (2UL <= 3)) { if (4UL >= 2UL) { (void)(((2UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
         return err_code;
     }
 
@@ -31843,7 +31745,7 @@ ret_code_t nrf_drv_saadc_calibrate_offset()
     nrf_saadc_int_enable(NRF_SAADC_INT_CALIBRATEDONE);
     nrf_saadc_task_trigger(NRF_SAADC_TASK_CALIBRATEOFFSET);
     err_code = ((0x0) + 0);
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_2(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Function: %s, error code: %s.", (uint32_t)((uint32_t)__func__), (uint32_t)((uint32_t)nrf_strerror_get(err_code))); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Function: %s, error code: %s."); (void)((uint32_t)__func__); (void)((uint32_t)""); } };
     return err_code;
 }
 
@@ -31879,7 +31781,7 @@ void nrf_drv_saadc_abort(void)
 
         m_cb.p_buffer           = 0;
         m_cb.p_secondary_buffer = 0;
-        if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_0(((3UL) | m_nrf_log_saadc_logs_data_dynamic . module_id << 16), "Conversion aborted."); } };
+        if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Conversion aborted."); } };
     }
 }
 

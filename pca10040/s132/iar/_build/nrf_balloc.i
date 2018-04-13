@@ -29737,100 +29737,7 @@ static inline uint8_t nrf_balloc_max_utilization_get(nrf_balloc_t const * p_pool
 
 
 #line 54 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-#line 1 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\strerror\\nrf_strerror.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_get(ret_code_t code);
-
-
-
-
-
-
-
-
-
-
- 
-char const * nrf_strerror_find(ret_code_t code);
-
- 
-
-
-
-
-
-#line 56 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
-
-
-
-
+#line 60 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
 
@@ -29951,9 +29858,6 @@ char const * nrf_strerror_find(ret_code_t code);
 
 
 
-
-
-#line 160 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
 
 
 #line 179 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\src\\nrf_log_internal.h"
@@ -30361,8 +30265,6 @@ uint32_t nrf_log_push(char * const p_str);
 
 
  
-
-
 #line 227 "C:\\nRF5_SDK_14.2.0_17b948a\\examples\\ble_peripheral\\ble_app_hrs\\pca10040\\s132\\iar\\..\\..\\..\\..\\..\\..\\components\\libraries\\experimental_log\\nrf_log.h"
 
 
@@ -30373,7 +30275,7 @@ uint32_t nrf_log_push(char * const p_str);
 
  
 #line 55 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\balloc\\nrf_balloc.c"
-__root const nrf_log_module_const_data_t m_nrf_log_balloc_logs_data_const @ "log_const_data" = { . p_module_name = "balloc", . info_color_id = 0, . debug_color_id = 0, . compiled_lvl = 0, }; __root nrf_log_module_dynamic_data_t m_nrf_log_balloc_logs_data_dynamic @ "log_dynamic_data";
+;
 
 
 
@@ -30425,7 +30327,7 @@ ret_code_t nrf_balloc_init(nrf_balloc_t const * p_pool)
 
 #line 216 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\balloc\\nrf_balloc.c"
 
-    if (1 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { nrf_log_frontend_std_4(((3UL) | m_nrf_log_balloc_logs_data_dynamic . module_id << 16), "Pool '" "0x%08X" "' initialized (size: %u x %u = %u bytes)", (uint32_t)(p_pool), (uint32_t)(pool_size), (uint32_t)(p_pool->block_size), (uint32_t)(pool_size * p_pool->block_size)); } };
+    if (0 && (0 >= 3UL) && (3UL <= 3)) { if (4UL >= 3UL) { (void)(((3UL) | 0 << 16)); (void)("Pool '" "0x%08X" "' initialized (size: %u x %u = %u bytes)"); (void)(p_pool); (void)(pool_size); (void)(p_pool->block_size); (void)(pool_size * p_pool->block_size); } };
 
 
 
@@ -30467,7 +30369,7 @@ void * nrf_balloc_alloc(nrf_balloc_t const * p_pool)
 
 #line 263 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\balloc\\nrf_balloc.c"
 
-    if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_balloc_logs_data_dynamic . module_id << 16), "nrf_balloc_alloc(pool: '" "0x%08X" "', element: 0x%08X)", (uint32_t)(p_pool), (uint32_t)(p_block)); } };
+    if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("nrf_balloc_alloc(pool: '" "0x%08X" "', element: 0x%08X)"); (void)(p_pool); (void)(p_block); } };
 
 
     return p_block;
@@ -30478,7 +30380,7 @@ void nrf_balloc_free(nrf_balloc_t const * p_pool, void * p_element)
     if (0) { if (p_pool != 0) { } else { assert_nrf_callback((uint16_t)272, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\balloc\\nrf_balloc.c"); } };
     if (0) { if (p_element != 0) { } else { assert_nrf_callback((uint16_t)273, (uint8_t *)"C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\balloc\\nrf_balloc.c"); } }
 
-    if (1 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { nrf_log_frontend_std_2(((4UL) | m_nrf_log_balloc_logs_data_dynamic . module_id << 16), "nrf_balloc_free(pool: '" "0x%08X" "', element: 0x%08X)", (uint32_t)(p_pool), (uint32_t)(p_element)); } };
+    if (0 && (0 >= 4UL) && (4UL <= 3)) { if (4UL >= 4UL) { (void)(((4UL) | 0 << 16)); (void)("nrf_balloc_free(pool: '" "0x%08X" "', element: 0x%08X)"); (void)(p_pool); (void)(p_element); } };
 
 
 #line 304 "C:\\nRF5_SDK_14.2.0_17b948a\\components\\libraries\\balloc\\nrf_balloc.c"
